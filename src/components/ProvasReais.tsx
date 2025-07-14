@@ -5,21 +5,21 @@ import placaComemoracaoImg from "@/assets/placa-comemoracao.jpg";
 export function ProvasReais() {
   const cases = [{
     company: "Kirvano",
-    value: "R$150.000",
+    value: "R$300.000",
     description: "Faturamento em lançamento",
     metrics: "CPL: R$3,12 • ROI: 4.2x • Conv: 12%",
     color: "neon-green",
     icon: TrendingUp
   }, {
     company: "Kiwify",
-    value: "R$100.000",
+    value: "R$160.000",
     description: "Vendas em perpétuo",
     metrics: "CPL: R$2,87 • ROI: 3.8x • Conv: 15%",
     color: "neon-blue",
     icon: Target
   }, {
     company: "Lastlink",
-    value: "R$50.000",
+    value: "R$60.000",
     description: "Otimização de funil",
     metrics: "CPL: R$1,95 • ROI: 5.1x • Conv: 18%",
     color: "neon-purple",

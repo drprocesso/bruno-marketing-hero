@@ -33,7 +33,7 @@ export function ProvasReais() {
           <h2 className="text-4xl lg:text-5xl font-black mb-6">
             Cases que <span className="text-gradient-primary">falam por si</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Mais de R$400.000 gerenciados em tráfego pago. Resultados comprovados em lançamentos e vendas perpétuas.</p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Mais de R$400.000 gerenciados em tráfego pago.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">

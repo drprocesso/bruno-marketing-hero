@@ -1,12 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { HeroSection } from "@/components/HeroSection";
+import { ProvasReais } from "@/components/ProvasReais";
+import { CriativosVSLs } from "@/components/CriativosVSLs";
+import { MicroSaasSection } from "@/components/MicroSaasSection";
+import { BuscandoEquipe } from "@/components/BuscandoEquipe";
+import { SkillsSection } from "@/components/SkillsSection";
+import { Timeline } from "@/components/Timeline";
+import { ChatSimulado } from "@/components/ChatSimulado";
+import { Footer } from "@/components/Footer";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <HeroSection />
+      <ProvasReais />
+      <CriativosVSLs />
+      <MicroSaasSection />
+      <BuscandoEquipe />
+      <SkillsSection />
+      <Timeline />
+      <ChatSimulado />
+      <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

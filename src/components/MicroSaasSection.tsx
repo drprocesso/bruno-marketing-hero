@@ -1,0 +1,115 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ExternalLink, Zap, Smartphone, FileText, ArrowRight } from "lucide-react";
+
+export function MicroSaasSection() {
+  const produtos = [
+    {
+      name: "Snapify",
+      description: "Ferramenta de captura e edição de screenshots para criadores de conteúdo",
+      tech: "React, Electron, Node.js",
+      status: "Ativo",
+      icon: Smartphone,
+      color: "neon-green"
+    },
+    {
+      name: "HerbApp",
+      description: "App de gestão para cultivadores domésticos com automações inteligentes",
+      tech: "React Native, Supabase",
+      status: "MVP",
+      icon: Zap,
+      color: "neon-blue"
+    },
+    {
+      name: "Dr. Processo",
+      description: "Automatização de processos jurídicos com IA e webhooks",
+      tech: "n8n, Supabase, API integrations",
+      status: "Desenvolvimento",
+      icon: FileText,
+      color: "neon-purple"
+    }
+  ];
+
+  return (
+    <section className="py-20 px-4">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <Badge variant="outline" className="mb-4 border-primary text-primary">
+            Micro SaaS & Produtos
+          </Badge>
+          <h2 className="text-4xl lg:text-5xl font-black mb-6">
+            Criando <span className="text-gradient-primary">soluções</span> que resolvem problemas reais
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Além de tráfego e marketing, desenvolvo micro SaaS e automações. 
+            MVPs rápidos, tecnologias modernas e foco na solução do problema.
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          {produtos.map((produto, index) => {
+            const Icon = produto.icon;
+            return (
+              <Card key={index} className="hover-lift border-border/50 bg-card/80 backdrop-blur-sm group">
+                <CardHeader>
+                  <div className="flex items-center justify-between mb-4">
+                    <div className={`p-3 rounded-lg bg-${produto.color}/10 border border-${produto.color}/20`}>
+                      <Icon className={`w-6 h-6 text-${produto.color}`} />
+                    </div>
+                    <Badge 
+                      variant={produto.status === 'Ativo' ? 'default' : 'secondary'}
+                      className="text-xs"
+                    >
+                      {produto.status}
+                    </Badge>
+                  </div>
+                  <CardTitle className="text-xl font-black mb-2">
+                    {produto.name}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">
+                    {produto.description}
+                  </p>
+                  <div className="text-sm text-muted-foreground bg-muted/50 rounded-lg p-3 mb-4">
+                    <strong>Tech Stack:</strong> {produto.tech}
+                  </div>
+                  <Button variant="ghost" size="sm" className="w-full group">
+                    Ver projeto
+                    <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
+
+        {/* Highlights */}
+        <div className="grid md:grid-cols-2 gap-8">
+          <Card className="bg-gradient-to-br from-primary/10 to-accent/10 border-primary/20">
+            <CardContent className="p-8 text-center">
+              <Zap className="w-12 h-12 text-primary mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-4">MVPs Rápidos</h3>
+              <p className="text-muted-foreground">
+                Desenvolvo protótipos funcionais em questão de semanas. 
+                Foco na validação rápida e iteração baseada em feedback real.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-gradient-to-br from-accent/10 to-primary/10 border-accent/20">
+            <CardContent className="p-8 text-center">
+              <FileText className="w-12 h-12 text-accent mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-4">Automações Inteligentes</h3>
+              <p className="text-muted-foreground">
+                Uso n8n, Supabase e integrações via API para criar workflows 
+                que economizam tempo e reduzem processos manuais.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </section>
+  );
+}

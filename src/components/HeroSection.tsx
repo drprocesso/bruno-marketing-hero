@@ -45,7 +45,7 @@ export function HeroSection() {
               <div className="text-sm text-muted-foreground">Investido em tráfego</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-black text-neon-blue">4+</div>
+              <div className="text-3xl font-black text-neon-blue">2+</div>
               <div className="text-sm text-muted-foreground">Micro SaaS criados</div>
             </div>
             <div className="text-center">

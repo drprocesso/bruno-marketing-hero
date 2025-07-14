@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp, Target, DollarSign, BarChart3 } from "lucide-react";
+import placaComemoracaoImg from "@/assets/placa-comemoracao.jpg";
 export function ProvasReais() {
   const cases = [{
     company: "Kitvano",
@@ -60,8 +61,16 @@ export function ProvasReais() {
                   <p className="text-muted-foreground mb-4">
                     {case_.description}
                   </p>
-                  <div className="text-sm text-muted-foreground bg-muted/50 rounded-lg p-3">
+                  <div className="text-sm text-muted-foreground bg-muted/50 rounded-lg p-3 mb-4">
                     {case_.metrics}
+                  </div>
+                  
+                  <div className="mt-4">
+                    <img 
+                      src={placaComemoracaoImg} 
+                      alt="Placa de comemoração" 
+                      className="w-full h-24 object-cover rounded-lg opacity-80 hover:opacity-100 transition-opacity"
+                    />
                   </div>
                 </CardContent>
               </Card>;

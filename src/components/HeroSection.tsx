@@ -44,7 +44,7 @@ export function HeroSection() {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-border">
             <div className="text-center">
-              <div className="text-3xl font-black text-neon-green">R$300k+</div>
+              <div className="text-3xl font-black text-neon-green">R$400k+</div>
               <div className="text-sm text-muted-foreground">Investido em tráfego</div>
             </div>
             <div className="text-center">

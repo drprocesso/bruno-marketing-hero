@@ -4,7 +4,7 @@ import { TrendingUp, Target, DollarSign, BarChart3 } from "lucide-react";
 import placaComemoracaoImg from "@/assets/placa-comemoracao.jpg";
 export function ProvasReais() {
   const cases = [{
-    company: "Kitvano",
+    company: "Kirvano",
     value: "R$150.000",
     description: "Faturamento em lançamento",
     metrics: "CPL: R$3,12 • ROI: 4.2x • Conv: 12%",

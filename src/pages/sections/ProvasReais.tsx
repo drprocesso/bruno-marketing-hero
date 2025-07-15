@@ -80,11 +80,7 @@ export function ProvasReais() {
                   </div>
                   
                   <div className="mt-4">
-                    <img 
-                      src={placaComemoracaoImg} 
-                      alt="Placa de comemoração" 
-                      className="w-full h-24 object-cover rounded-lg opacity-80 hover:opacity-100 transition-opacity"
-                    />
+                    
                   </div>
                 </CardContent>
               </Card>

@@ -10,7 +10,7 @@ export function ChatSimulado() {
   const conversations = [
     {
       question: "Por que contratar você?",
-      answer: "Porque combino performance comprovada com visão técnica. Não sou só um gestor de tráfego - sou alguém que entende o funil completo e pode criar as ferramentas que o negócio precisa."
+      answer: "Porque combino performance comprovada com visão técnica. Entendo o funil completo de vendas e posso criar as ferramentas que o seu negócio precisa."
     },
     {
       question: "Qual seu diferencial?",
@@ -18,11 +18,11 @@ export function ChatSimulado() {
     },
     {
       question: "Como você se mantém atualizado?",
-      answer: "Testo constantemente. Cada campanha é um laboratório. Além disso, desenvolvo meus próprios projetos para entender as tecnologias por dentro."
+      answer: "Testo constantemente. Cada novo projeto é um desafio. Além disso, desenvolvo meus próprios projetos para entender as tecnologias por dentro."
     },
     {
       question: "Qual o seu maior case?",
-      answer: "R$300k faturados com a Kirvano em um infoproduto. Mas o que mais me orgulha é ter criado todo o ecossistema: desde o criativo até as automações de follow-up."
+      answer: "Foram todos os sistemas que criei sozinho do absoluto zero. Desde a visão do negócio até a implementação completa de funis de venda e acompanhamento."
     }
   ];
 

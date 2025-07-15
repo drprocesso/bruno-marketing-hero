@@ -66,7 +66,7 @@ export function BuscandoEquipe() {
               </h3>
               <div className="space-y-3 text-primary-foreground/90 mb-8">
                 <div>✓ Performance comprovada em tráfego pago</div>
-                <div>✓ Experiência em lançamentos e vendas perpétuas</div>
+                <div>✓ Experiência em e vendas no Brasil e Exterior</div>
                 <div>✓ Visão técnica e criativa combinadas</div>
                 <div>✓ Capacidade de desenvolver soluções próprias</div>
                 <div>✓ Mindset de crescimento e inovação</div>
@@ -79,25 +79,7 @@ export function BuscandoEquipe() {
           </Card>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button variant="neon" size="lg" className="group">
-            <Download className="mr-2" />
-            Download CV interativo
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-          </Button>
-          
-          <Button variant="whatsapp" size="lg" className="group">
-            <MessageCircle className="mr-2" />
-            Me chamar no WhatsApp
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-          </Button>
-          
-          <Button variant="neonOutline" size="lg" className="group">
-            <Play className="mr-2" />
-            Ver skills em 30 segundos
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-          </Button>
-        </div>
+       
       </div>
     </section>
   );

@@ -39,7 +39,7 @@ export function MicroSaasSection() {
             Micro SaaS, Sites & Sistemas
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-black mb-6">
-            Criando <span className="text-gradient-primary">soluções que resolvem</span>problemas reais
+            Criando <span className="text-gradient-primary">soluções que resolvem</span> problemas reais
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Além de tráfego e marketing, desenvolvo micro SaaS, sites e automações. 

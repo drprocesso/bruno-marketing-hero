@@ -11,7 +11,7 @@ export function MicroSaasSection() {
       tech: "React, Supabase, Stripe",
       status: "Ativo",
       icon: Smartphone,
-      color: "neon-green"
+      color: "neon-purple"
     },
     {
       name: "HerbApp",
@@ -27,7 +27,7 @@ export function MicroSaasSection() {
       tech: "n8n, Supabase, API integrations",
       status: "Desenvolvimento",
       icon: FileText,
-      color: "neon-purple"
+      color: "neon-blue"
     }
   ];
 

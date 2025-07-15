@@ -117,7 +117,9 @@ export function CriativosVSLs() {
           })}
         </div>
 
-       
+        {/* CTA Section */}
+        
+      </div>
 
       {/* Modals */}
       <VideoModal

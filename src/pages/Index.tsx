@@ -1,12 +1,12 @@
-import { HeroSection } from "@/components/HeroSection";
-import { ProvasReais } from "@/components/ProvasReais";
-import { CriativosVSLs } from "@/components/CriativosVSLs";
-import { MicroSaasSection } from "@/components/MicroSaasSection";
-import { BuscandoEquipe } from "@/components/BuscandoEquipe";
-import { SkillsSection } from "@/components/SkillsSection";
-import { Timeline } from "@/components/Timeline";
-import { ChatSimulado } from "@/components/ChatSimulado";
-import { Footer } from "@/components/Footer";
+import { HeroSection } from "./sections/HeroSection";
+import { ProvasReais } from "./sections/ProvasReais";
+import { CriativosVSLs } from "./sections/CriativosVSLs";
+import { MicroSaasSection } from "./sections/MicroSaasSection";
+import { BuscandoEquipe } from "./sections/BuscandoEquipe";
+import { SkillsSection } from "./sections/SkillsSection";
+import { Timeline } from "./sections/Timeline";
+import { ChatSimulado } from "./sections/ChatSimulado";
+import { Footer } from "./sections/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const Index = () => {

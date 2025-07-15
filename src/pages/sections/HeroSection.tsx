@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircle, Eye } from "lucide-react";
 import brunoAvatar from "@/assets/bruno-avatar.jpg";
+
 export function HeroSection() {
-  return <section className="min-h-screen flex items-center justify-center px-4 pt-20 pb-10">
+  return (
+    <section className="min-h-screen flex items-center justify-center px-4 pt-20 pb-10">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         {/* Content */}
         <div className="text-center lg:text-left animate-slide-up">
@@ -76,5 +78,6 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 }

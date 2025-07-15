@@ -2,30 +2,37 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp, Target, DollarSign, BarChart3 } from "lucide-react";
 import placaComemoracaoImg from "@/assets/placa-comemoracao.jpg";
+
 export function ProvasReais() {
-  const cases = [{
-    company: "Kirvano",
-    value: "R$300.000",
-    description: "Faturamento em lançamento",
-    metrics: "CPL: R$3,12 • ROI: 4.2x • Conv: 12%",
-    color: "neon-green",
-    icon: TrendingUp
-  }, {
-    company: "Kiwify",
-    value: "R$160.000",
-    description: "Vendas em perpétuo",
-    metrics: "CPL: R$2,87 • ROI: 3.8x • Conv: 15%",
-    color: "neon-blue",
-    icon: Target
-  }, {
-    company: "Lastlink",
-    value: "R$60.000",
-    description: "Otimização de funil",
-    metrics: "CPL: R$1,95 • ROI: 5.1x • Conv: 18%",
-    color: "neon-purple",
-    icon: DollarSign
-  }];
-  return <section className="py-20 px-4">
+  const cases = [
+    {
+      company: "Kirvano",
+      value: "R$300.000",
+      description: "Faturamento em lançamento",
+      metrics: "CPL: R$3,12 • ROI: 4.2x • Conv: 12%",
+      color: "neon-green",
+      icon: TrendingUp
+    },
+    {
+      company: "Kiwify",
+      value: "R$160.000",
+      description: "Vendas em perpétuo",
+      metrics: "CPL: R$2,87 • ROI: 3.8x • Conv: 15%",
+      color: "neon-blue",
+      icon: Target
+    },
+    {
+      company: "Lastlink",
+      value: "R$60.000",
+      description: "Otimização de funil",
+      metrics: "CPL: R$1,95 • ROI: 5.1x • Conv: 18%",
+      color: "neon-purple",
+      icon: DollarSign
+    }
+  ];
+
+  return (
+    <section className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 border-primary text-primary">
@@ -39,8 +46,9 @@ export function ProvasReais() {
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {cases.map((case_, index) => {
-          const Icon = case_.icon;
-          return <Card key={index} className="hover-lift border-border/50 bg-card/80 backdrop-blur-sm group">
+            const Icon = case_.icon;
+            return (
+              <Card key={index} className="hover-lift border-border/50 bg-card/80 backdrop-blur-sm group">
                 <CardHeader className="pb-4">
                   <div className="flex items-center justify-between mb-4">
                     <div className={`p-3 rounded-lg bg-${case_.color}/10 border border-${case_.color}/20`}>
@@ -73,8 +81,9 @@ export function ProvasReais() {
                     />
                   </div>
                 </CardContent>
-              </Card>;
-        })}
+              </Card>
+            );
+          })}
         </div>
 
         {/* Dashboard fake */}
@@ -107,5 +116,6 @@ export function ProvasReais() {
           </CardContent>
         </Card>
       </div>
-    </section>;
+    </section>
+  );
 }

@@ -27,16 +27,22 @@ export function ChatSimulado() {
   ];
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (showingAnswer) {
+    let timeout: NodeJS.Timeout;
+    
+    if (showingAnswer) {
+      // Após mostrar a resposta, aguarda 10 segundos para próxima pergunta
+      timeout = setTimeout(() => {
         setShowingAnswer(false);
         setCurrentMessageIndex((prev) => (prev + 1) % conversations.length);
-      } else {
+      }, 10000);
+    } else {
+      // Após mostrar a pergunta, aguarda 2 segundos para mostrar resposta
+      timeout = setTimeout(() => {
         setShowingAnswer(true);
-      }
-    }, 3000);
+      }, 2000);
+    }
 
-    return () => clearInterval(interval);
+    return () => clearTimeout(timeout);
   }, [showingAnswer, conversations.length]);
 
   const currentConversation = conversations[currentMessageIndex];

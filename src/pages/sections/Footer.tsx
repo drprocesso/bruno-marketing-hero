@@ -10,7 +10,7 @@ export function Footer() {
             Se você busca uma solução para{" "}
             <span className="text-gradient-primary">ampliar o seu negócio</span>...
           </h2>
-          <p className="text-3xl text-gradient-secondary font-bold">
+          <p className="text-4xl text-gradient-secondary font-bold">
             fala comigo.
           </p>
         </div>

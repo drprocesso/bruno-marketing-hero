@@ -31,18 +31,18 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Button variant="whatsapp" size="lg" className="group" asChild>
               <a href="https://wa.me/5561990442148" target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="mr-2" />
+                <MessageCircle />
                 Falar comigo no WhatsApp
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
             
             <Button variant="neonOutline" size="lg" className="group">
-              <Eye className="mr-2" />
+              <Eye />
               <a href="#criativos-vsls" className="flex items-center">
                 Ver meus cases
               </a>
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
           

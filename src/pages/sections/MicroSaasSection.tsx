@@ -17,15 +17,15 @@ export function MicroSaasSection() {
       name: "HerbApp",
       description: "App de gestão para cultivadores domésticos com automações inteligentes",
       tech: "React Native, Supabase",
-      status: "MVP",
+      status: "Desenvolvimento",
       icon: Zap,
       color: "neon-blue"
     },
     {
       name: "Dr. Processo",
-      description: "Automatização de processos jurídicos com IA e webhooks",
+      description: "Automatização de processos jurídicos com IA e envio via Whatsapp",
       tech: "n8n, Supabase, API integrations",
-      status: "Desenvolvimento",
+      status: "Ativo",
       icon: FileText,
       color: "neon-blue"
     }

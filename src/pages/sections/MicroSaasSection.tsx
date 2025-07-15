@@ -19,7 +19,7 @@ export function MicroSaasSection() {
       tech: "React Native, Supabase",
       status: "Desenvolvimento",
       icon: Zap,
-      color: "neon-blue"
+      color: "neon-green"
     },
     {
       name: "Dr. Processo",

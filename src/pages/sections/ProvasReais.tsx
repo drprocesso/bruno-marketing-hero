@@ -93,7 +93,7 @@ export function ProvasReais() {
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <BarChart3 className="w-6 h-6 text-primary" />
-              Performance Dashboard - Últimos 12 meses
+              Projetos Concluídos - 2025
             </CardTitle>
           </CardHeader>
           <CardContent>

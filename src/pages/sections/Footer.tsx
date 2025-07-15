@@ -22,10 +22,7 @@ export function Footer() {
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
           
-          <Button variant="neonOutline" size="lg" className="group">
-            Ver LinkedIn
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          
         </div>
 
         <div className="border-t border-border pt-8">

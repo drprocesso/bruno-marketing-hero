@@ -56,10 +56,10 @@ export function CriativosVSLs() {
             Criativos & VSLs de Performance
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-black mb-6">
-            Criativos que <span className="text-gradient-secondary">realmente vendem</span>
+            Vídeos que <span className="text-gradient-secondary">realmente vendem</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Cada criativo é testado, otimizado e comprovado. Aqui você vê os que mais performaram e geraram resultados reais.
+            Cada vídeo é testado, otimizado e comprovado. Aqui você vê os que mais performaram e geraram resultados reais.
           </p>
         </div>
 

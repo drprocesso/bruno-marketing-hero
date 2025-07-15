@@ -2,8 +2,15 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Play, Eye, ArrowRight, Video, Image, TrendingUp } from "lucide-react";
+import { useState } from "react";
+import { VideoModal } from "@/components/VideoModal";
+import { VideoCarouselModal } from "@/components/VideoCarouselModal";
 
 export function CriativosVSLs() {
+  const [vslModalOpen, setVslModalOpen] = useState(false);
+  const [criativoModalOpen, setCriativoModalOpen] = useState(false);
+  const [vslPerpetuoModalOpen, setVslPerpetuoModalOpen] = useState(false);
+
   const criativos = [
     {
       type: "VSL",
@@ -11,7 +18,9 @@ export function CriativosVSLs() {
       result: "R$150k em vendas • 18% de conversão",
       description: "VSL de 45min que converteu incrivelmente bem no lançamento da Kitvano",
       metrics: "45min • 18% conv • R$150k vendas",
-      icon: Video
+      icon: Video,
+      videoId: "jJ4q5h4LsSY",
+      onButtonClick: () => setVslModalOpen(true)
     },
     {
       type: "Criativo",
@@ -19,7 +28,13 @@ export function CriativosVSLs() {
       result: "3.200 leads • R$2,14 CPL",
       description: "Criativo em vídeo que viralizou e trouxe leads de alta qualidade",
       metrics: "UGC • 3.2k leads • R$2,14 CPL",
-      icon: Image
+      icon: Image,
+      videos: [
+        { id: "Qj5zGXNzPsU", title: "Criativo UGC 1" },
+        { id: "NPjkG-jc2ZQ", title: "Criativo UGC 2" },
+        { id: "gC6G6grSOxw", title: "Criativo UGC 3" }
+      ],
+      onButtonClick: () => setCriativoModalOpen(true)
     },
     {
       type: "VSL",
@@ -27,7 +42,9 @@ export function CriativosVSLs() {
       result: "R$100k em vendas recorrentes",
       description: "VSL otimizada para conversão contínua em tráfego frio",
       metrics: "20min • 15% conv • Perpétuo",
-      icon: Video
+      icon: Video,
+      videoId: "zAFIULKaA7g",
+      onButtonClick: () => setVslPerpetuoModalOpen(true)
     }
   ];
 
@@ -81,7 +98,12 @@ export function CriativosVSLs() {
                   </div>
                   
                   <div className="flex gap-2">
-                    <Button variant="neonOutline" size="sm" className="flex-1 group">
+                    <Button 
+                      variant="neonOutline" 
+                      size="sm" 
+                      className="flex-1 group"
+                      onClick={criativo.onButtonClick}
+                    >
                       <Play className="w-4 h-4 mr-1" />
                       Ver {criativo.type}
                     </Button>
@@ -113,6 +135,31 @@ export function CriativosVSLs() {
           </CardContent>
         </Card>
       </div>
+
+      {/* Modals */}
+      <VideoModal
+        isOpen={vslModalOpen}
+        onClose={() => setVslModalOpen(false)}
+        videoId="jJ4q5h4LsSY"
+        title="VSL de Lançamento - Produto Digital"
+      />
+
+      <VideoCarouselModal
+        isOpen={criativoModalOpen}
+        onClose={() => setCriativoModalOpen(false)}
+        videos={[
+          { id: "Qj5zGXNzPsU", title: "Criativo UGC 1" },
+          { id: "NPjkG-jc2ZQ", title: "Criativo UGC 2" },
+          { id: "gC6G6grSOxw", title: "Criativo UGC 3" }
+        ]}
+      />
+
+      <VideoModal
+        isOpen={vslPerpetuoModalOpen}
+        onClose={() => setVslPerpetuoModalOpen(false)}
+        videoId="zAFIULKaA7g"
+        title="VSL de Vendas Perpétuas"
+      />
     </section>
   );
 }

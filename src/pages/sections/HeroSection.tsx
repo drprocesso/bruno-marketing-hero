@@ -24,7 +24,7 @@ export function HeroSection() {
             Agora, quero investir meu talento no seu projeto.
           </h2>
           
-          <p className="text-xl text-muted-foreground mb-12 max-w-2xl">Especialista em tráfego, criativos que convertem e VSLs que vendem, Webdesigner e Desenvolver de SaaS. Cases reais de faturamento.</p>
+          <p className="text-xl text-muted-foreground mb-12 max-w-2xl">Especialista em tráfego, criativos que convertem e VSLs que vendem, Webdesigner e Desenvolvedor de SaaS. Cases reais de faturamento.</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Button variant="whatsapp" size="lg" className="group">

@@ -14,7 +14,7 @@ export function HeroSection() {
             </span>
           </div>
           
-          <h1 className="text-5xl lg:text-7xl font-black mb-6 leading-tight">
+          <h1 className="text-5xl lg:text-4xl font-black mb-6 leading-tight">
             Investi mais de{" "}
             <span className="text-gradient-primary">R$400.000</span>{" "}
             em tráfego. 

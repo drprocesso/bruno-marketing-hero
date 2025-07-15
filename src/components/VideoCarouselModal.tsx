@@ -1,4 +1,4 @@
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
@@ -31,6 +31,9 @@ export function VideoCarouselModal({ isOpen, onClose, videos }: VideoCarouselMod
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl w-full p-0 bg-black border-0">
+        <DialogHeader className="sr-only">
+          <DialogTitle>{currentVideo?.title}</DialogTitle>
+        </DialogHeader>
         <div className="relative">
           <button
             onClick={onClose}

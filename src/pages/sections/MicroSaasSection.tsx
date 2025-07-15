@@ -20,7 +20,7 @@ export function MicroSaasSection() {
       status: "Desenvolvimento",
       icon: Zap,
       color: "neon-green"
-    }
+    },
     {
       name: "Dr. Processo",
       description: "Automatização de processos jurídicos com IA e envio via Whatsapp",
@@ -28,7 +28,7 @@ export function MicroSaasSection() {
       status: "Ativo",
       icon: FileText,
       color: "neon-blue"
-    },   
+    }  
   ];
 
   return (

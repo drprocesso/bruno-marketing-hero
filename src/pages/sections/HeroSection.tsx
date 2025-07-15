@@ -73,7 +73,7 @@ export function HeroSection() {
             animationDelay: '1s'
           }}>
               <div className="text-sm font-bold text-neon-purple">VSL Creator</div>
-              <div className="text-xs text-muted-foreground">R$350k+ vendidos</div>
+              <div className="text-xs text-muted-foreground">R$800k+ vendidos</div>
             </div>
           </div>
         </div>

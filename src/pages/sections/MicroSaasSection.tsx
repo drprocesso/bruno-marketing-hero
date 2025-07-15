@@ -103,7 +103,7 @@ export function MicroSaasSection() {
               <FileText className="w-12 h-12 text-accent mx-auto mb-4" />
               <h3 className="text-2xl font-bold mb-4">Automações Inteligentes</h3>
               <p className="text-muted-foreground">
-                Uso n8n/make, Supabase e integrações via API para criar automações 
+                Uso n8n/make, Whatsapp, Supabase e integrações via API para criar automações 
                 que economizam tempo e reduzem processos manuais.
               </p>
             </CardContent>

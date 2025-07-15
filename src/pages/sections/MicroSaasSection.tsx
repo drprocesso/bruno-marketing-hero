@@ -28,7 +28,7 @@ export function MicroSaasSection() {
       status: "Ativo",
       icon: FileText,
       color: "neon-blue"
-    }   
+    },   
   ];
 
   return (

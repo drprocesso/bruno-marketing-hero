@@ -38,7 +38,9 @@ export function HeroSection() {
             
             <Button variant="neonOutline" size="lg" className="group">
               <Eye className="mr-2" />
-              Ver meus cases
+              <a href="#criativos-vsls" className="flex items-center">
+                Ver meus cases
+              </a>
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>

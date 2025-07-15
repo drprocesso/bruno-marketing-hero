@@ -49,7 +49,7 @@ export function CriativosVSLs() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-muted/20">
+    <section id="criativos-vsls" className="py-20 px-4 bg-muted/20">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 border-accent text-accent">

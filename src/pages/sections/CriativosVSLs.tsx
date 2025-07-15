@@ -14,20 +14,20 @@ export function CriativosVSLs() {
   const criativos = [
     {
       type: "VSL",
-      title: "VSL de Lançamento - Produto Digital",
-      result: "R$150k em vendas • 18% de conversão",
-      description: "VSL de 45min que converteu incrivelmente bem no lançamento da Kitvano",
-      metrics: "45min • 18% conv • R$150k vendas",
+      title: "VSL de Saúde - Nacional",
+      result: "R$300k em vendas",
+      description: "VSL de 25min que converteu incrivelmente bem por meses",
+      metrics: "25min • 100% IA • R$300k vendas",
       icon: Video,
       videoId: "jJ4q5h4LsSY",
       onButtonClick: () => setVslModalOpen(true)
     },
     {
       type: "Criativo",
-      title: "Criativo UGC + Hook Viral",
-      result: "3.200 leads • R$2,14 CPL",
-      description: "Criativo em vídeo que viralizou e trouxe leads de alta qualidade",
-      metrics: "UGC • 3.2k leads • R$2,14 CPL",
+      title: "Criativos UGC + Hook Viral",
+      result: "CPC 1,00 • CTR 6%",
+      description: "Criativos em vídeo que trouxeram lucro a custo baixo",
+      metrics: "UGC + IA • CPM < 30,00",
       icon: Image,
       videos: [
         { id: "Qj5zGXNzPsU", title: "Criativo UGC 1" },
@@ -38,9 +38,9 @@ export function CriativosVSLs() {
     },
     {
       type: "VSL",
-      title: "VSL de Vendas Perpétuas",
-      result: "R$100k em vendas recorrentes",
-      description: "VSL otimizada para conversão contínua em tráfego frio",
+      title: "VSL de Saúde - EUA",
+      result: "R$160k em vendas nos EUA",
+      description: "VSL otimizada para conversar com público americano",
       metrics: "20min • 15% conv • Perpétuo",
       icon: Video,
       videoId: "zAFIULKaA7g",

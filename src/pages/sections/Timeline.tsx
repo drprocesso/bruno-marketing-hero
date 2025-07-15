@@ -5,30 +5,30 @@ import { Play, TrendingUp, Code, Users, Rocket } from "lucide-react";
 export function Timeline() {
   const milestones = [
     {
-      year: "2019",
+      year: "2020",
       title: "Primeiro contato com tráfego",
       description: "Descobri o Meta Ads e comecei a estudar marketing digital",
       icon: Play,
       color: "neon-blue"
     },
     {
-      year: "2020",
-      title: "Primeiro PLR validado",
-      description: "Validei meu primeiro produto digital com tráfego pago",
+      year: "2021",
+      title: "Primeiro Ecommerce",
+      description: "Construí minha primeira loja virtual com produtos sem estoque",
       icon: TrendingUp,
       color: "neon-green"
     },
     {
-      year: "2021",
+      year: "2022",
       title: "R$100k em vendas",
       description: "Primeiro marco de 6 dígitos em faturamento gerenciado",
       icon: Rocket,
       color: "neon-purple"
     },
     {
-      year: "2023",
+      year: "2024",
       title: "Desenvolvimento de apps",
-      description: "Comecei a desenvolver micro SaaS e automações",
+      description: "Comecei a desenvolver micro SaaS e automações completas",
       icon: Code,
       color: "neon-pink"
     },

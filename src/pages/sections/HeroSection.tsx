@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircle, Eye } from "lucide-react";
-import brunoAvatar from "@/assets/bruno-avatar.jpg";
+import brunoAvatar from "@/assets/bruno.png";
 
 export function HeroSection() {
   return (

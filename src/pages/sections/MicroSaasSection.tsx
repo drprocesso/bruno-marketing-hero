@@ -6,9 +6,9 @@ import { ExternalLink, Zap, Smartphone, FileText } from "lucide-react";
 export function MicroSaasSection() {
   const produtos = [
     {
-      name: "Snapify",
-      description: "Ferramenta de captura e edição de screenshots para criadores de conteúdo",
-      tech: "React, Electron, Node.js",
+      name: "Connectafy",
+      description: "Estrutura para agência de tráfego nichada para aluguem de kits de festas.",
+      tech: "React, Supabase, Stripe",
       status: "Ativo",
       icon: Smartphone,
       color: "neon-green"

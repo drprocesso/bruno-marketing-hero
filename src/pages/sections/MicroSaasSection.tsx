@@ -36,14 +36,14 @@ export function MicroSaasSection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 border-primary text-primary">
-            Micro SaaS & Produtos
+            Micro SaaS, Sites & Sistemas
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-black mb-6">
             Criando <span className="text-gradient-primary">soluções</span> que resolvem problemas reais
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Além de tráfego e marketing, desenvolvo micro SaaS e automações. 
-            MVPs rápidos, tecnologias modernas e foco na solução do problema.
+            Além de tráfego e marketing, desenvolvo micro SaaS, sites e automações. 
+            Sistemas rápidos, tecnologias modernas e foco na solução do problema.
           </p>
         </div>
 
@@ -90,10 +90,10 @@ export function MicroSaasSection() {
           <Card className="bg-gradient-to-br from-primary/10 to-accent/10 border-primary/20">
             <CardContent className="p-8 text-center">
               <Zap className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4">MVPs Rápidos</h3>
+              <h3 className="text-2xl font-bold mb-4">Sistemas Completos</h3>
               <p className="text-muted-foreground">
-                Desenvolvo protótipos funcionais em questão de semanas. 
-                Foco na validação rápida e iteração baseada em feedback real.
+                Desenvolvo sites e sistemas funcionais em questão de dias. 
+                Foco na entrega rápida e suporte pós venda.
               </p>
             </CardContent>
           </Card>
@@ -103,7 +103,7 @@ export function MicroSaasSection() {
               <FileText className="w-12 h-12 text-accent mx-auto mb-4" />
               <h3 className="text-2xl font-bold mb-4">Automações Inteligentes</h3>
               <p className="text-muted-foreground">
-                Uso n8n, Supabase e integrações via API para criar workflows 
+                Uso n8n/make, Supabase e integrações via API para criar automações 
                 que economizam tempo e reduzem processos manuais.
               </p>
             </CardContent>

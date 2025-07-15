@@ -89,34 +89,7 @@ export function ProvasReais() {
         </div>
 
         {/* Dashboard fake */}
-        <Card className="bg-gradient-to-r from-card/80 to-card/60 border-primary/20 glow-primary">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <BarChart3 className="w-6 h-6 text-primary" />
-              Projetos Concluídos - 2025
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-black text-neon-green mb-1">R$300k+</div>
-                <div className="text-sm text-muted-foreground">Total Investido</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-black text-neon-blue mb-1">4.2x</div>
-                <div className="text-sm text-muted-foreground">ROI Médio</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-black text-neon-purple mb-1">R$2,14</div>
-                <div className="text-sm text-muted-foreground">CPL Médio</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-black text-neon-pink mb-1">15%</div>
-                <div className="text-sm text-muted-foreground">Conv. Média</div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+        
       </div>
     </section>
   );

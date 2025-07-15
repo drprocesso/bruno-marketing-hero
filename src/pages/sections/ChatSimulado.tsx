@@ -34,7 +34,7 @@ export function ChatSimulado() {
       } else {
         setShowingAnswer(true);
       }
-    }, 3000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, [showingAnswer, conversations.length]);

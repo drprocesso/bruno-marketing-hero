@@ -17,7 +17,10 @@ export function HeroSection() {
           <h1 className="text-5xl lg:text-7xl font-black mb-6 leading-tight">
             Investi mais de{" "}
             <span className="text-gradient-primary">R$400.000</span>{" "}
-            em tráfego. Já construí mais de 100 sistemas de vendas.
+            em tráfego. 
+             Já construí mais de{" "}
+            <span className="text-gradient-primary">100 sistemas</span>{" "}
+            de vendas.
           </h1>
           
           <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gradient-secondary">

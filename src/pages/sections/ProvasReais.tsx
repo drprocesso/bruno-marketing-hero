@@ -53,7 +53,7 @@ export function ProvasReais() {
               <Card key={index} className="hover-lift border-border/50 bg-card/80 backdrop-blur-sm group">
                 <CardHeader className="pb-4">
                   <div className="flex items-center justify-between mb-4">
-                    <div className="p-4 rounded-lg bg-white/60 border border-white/20 flex items-center justify-center w-24 h-24">
+                    <div className="p-4 rounded-lg bg-white/100 border border-white/20 flex items-center justify-center w-24 h-24">
                       <img 
                         src={case_.logo} 
                         alt={`${case_.company} logo`}

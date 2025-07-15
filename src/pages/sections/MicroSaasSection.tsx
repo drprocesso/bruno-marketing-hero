@@ -7,7 +7,7 @@ export function MicroSaasSection() {
   const produtos = [
     {
       name: "Connectafy",
-      description: "Estrutura para agência de tráfego nichada para aluguem de kits de festas.",
+      description: "Estrutura para agência de tráfego nichada para aluguel de kits de festas.",
       tech: "React, Supabase, Stripe",
       status: "Ativo",
       icon: Smartphone,

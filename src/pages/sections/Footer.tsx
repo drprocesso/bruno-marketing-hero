@@ -7,8 +7,8 @@ export function Footer() {
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-12">
           <h2 className="text-4xl lg:text-5xl font-black mb-6">
-            Se você busca alguém que faz{" "}
-            <span className="text-gradient-primary">mais do que anúncios</span>...
+            Se você busca uma solução para{" "}
+            <span className="text-gradient-primary">ampliar o seu negócio</span>...
           </h2>
           <p className="text-2xl text-gradient-secondary font-bold">
             fala comigo.

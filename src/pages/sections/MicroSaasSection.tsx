@@ -1,9 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Zap, Smartphone, FileText } from "lucide-react";
+import { ExternalLink, Zap, Smartphone, FileText, Eye, Code, ShoppingCart, Calendar, Utensils } from "lucide-react";
+import { useState } from "react";
+import { ProjectModal } from "@/components/ProjectModal";
 
 export function MicroSaasSection() {
+  const [selectedProject, setSelectedProject] = useState<string | null>(null);
+
   const produtos = [
     {
       name: "Connectafy",
@@ -11,15 +15,8 @@ export function MicroSaasSection() {
       tech: "React, Supabase, Stripe",
       status: "Ativo",
       icon: Smartphone,
-      color: "neon-purple"
-    },
-     {
-      name: "Sob Encomenda",
-      description: "Dashboards de sistemas de vendas, gestão de estoque, aluguel...",
-      tech: "React, Supabase, API, Gateway",
-      status: "Desenvolvimento",
-      icon: Zap,
-      color: "neon-green"
+      color: "neon-purple",
+      url: "https://connectafy.com.br/"
     },
     {
       name: "Dr. Processo",
@@ -27,8 +24,48 @@ export function MicroSaasSection() {
       tech: "n8n, Supabase, API integrations",
       status: "Ativo",
       icon: FileText,
-      color: "neon-blue"
-    }  
+      color: "neon-blue",
+      url: "https://drprocesso.com.br/"
+    }
+  ];
+
+  const projetosDemonstrativos = [
+    {
+      id: "pitstop",
+      name: "PitStop Inventory",
+      description: "Sistema de controle de estoque para oficinas automotivas",
+      tech: "React, TypeScript, Supabase",
+      icon: Code,
+      color: "neon-green",
+      url: "https://pitstop-inventory-control.lovable.app"
+    },
+    {
+      id: "ecom-pulse",
+      name: "Ecom Pulse Central",
+      description: "Dashboard de analytics para e-commerce com métricas em tempo real",
+      tech: "React, Charts, API Integration",
+      icon: ShoppingCart,
+      color: "neon-blue",
+      url: "https://ecom-pulse-central.lovable.app"
+    },
+    {
+      id: "burger-menu",
+      name: "Dark Burger Menu",
+      description: "Cardápio digital interativo para restaurantes com tema dark",
+      tech: "React, CSS Animations, Responsive",
+      icon: Utensils,
+      color: "neon-purple",
+      url: "https://dark-burger-menu.lovable.app"
+    },
+    {
+      id: "barber-booking",
+      name: "Estilo Barba Agendamento",
+      description: "Sistema de agendamento para barbearias com gestão de horários",
+      tech: "React, Calendar, Booking System",
+      icon: Calendar,
+      color: "neon-pink",
+      url: "https://estilo-barba-agendamento.lovable.app"
+    }
   ];
 
   return (
@@ -47,7 +84,8 @@ export function MicroSaasSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        {/* Produtos Principais */}
+        <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {produtos.map((produto, index) => {
             const Icon = produto.icon;
             return (
@@ -77,7 +115,7 @@ export function MicroSaasSection() {
                   </div>
                   <Button variant="ghost" size="sm" className="w-full group">
                     <a 
-                      href={produto.name === 'Connectafy' ? 'https://connectafy.com.br/' : produto.name === 'Dr. Processo' ? 'https://drprocesso.com.br/' : '#'} 
+                      href={produto.url} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 w-full justify-center"
@@ -90,6 +128,67 @@ export function MicroSaasSection() {
               </Card>
             );
           })}
+        </div>
+
+        {/* Projetos Demonstrativos */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold mb-4">
+              Projetos <span className="text-gradient-secondary">Demonstrativos</span>
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Exemplos práticos de diferentes tipos de sistemas que desenvolvo. 
+              Clique para explorar cada projeto em detalhes.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-6">
+            {projetosDemonstrativos.map((projeto, index) => {
+              const Icon = projeto.icon;
+              return (
+                <Card key={index} className="hover-lift border-border/50 bg-card/80 backdrop-blur-sm group cursor-pointer">
+                  <CardHeader className="pb-4">
+                    <div className={`p-3 rounded-lg bg-${projeto.color}/10 border border-${projeto.color}/20 w-fit mb-4`}>
+                      <Icon className={`w-6 h-6 text-${projeto.color}`} />
+                    </div>
+                    <CardTitle className="text-lg font-bold mb-2">
+                      {projeto.name}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground text-sm mb-4">
+                      {projeto.description}
+                    </p>
+                    <div className="text-xs text-muted-foreground bg-muted/50 rounded p-2 mb-4">
+                      {projeto.tech}
+                    </div>
+                    
+                    <div className="flex gap-2">
+                      <Button 
+                        variant="neonOutline" 
+                        size="sm" 
+                        className="flex-1 group"
+                        onClick={() => setSelectedProject(projeto.id)}
+                      >
+                        <Eye className="w-4 h-4 mr-1" />
+                        Preview
+                      </Button>
+                      <Button 
+                        variant="ghost" 
+                        size="sm" 
+                        className="group"
+                        asChild
+                      >
+                        <a href={projeto.url} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
         </div>
 
         {/* Highlights */}
@@ -117,6 +216,14 @@ export function MicroSaasSection() {
           </Card>
         </div>
       </div>
+
+      {/* Project Modal */}
+      <ProjectModal
+        isOpen={selectedProject !== null}
+        onClose={() => setSelectedProject(null)}
+        projectId={selectedProject}
+        projects={projetosDemonstrativos}
+      />
     </section>
   );
 }

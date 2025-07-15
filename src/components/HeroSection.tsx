@@ -50,7 +50,7 @@ export function HeroSection() {
             </div>
             <div className="text-center">
               <div className="text-3xl font-black text-neon-purple">100+</div>
-              <div className="text-sm text-muted-foreground">Criativos testados</div>
+              <div className="text-sm text-muted-foreground">Websites Criados</div>
             </div>
           </div>
         </div>

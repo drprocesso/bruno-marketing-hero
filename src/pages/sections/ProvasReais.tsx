@@ -11,7 +11,7 @@ export function ProvasReais() {
     {
       company: "Kirvano",
       value: "R$300.000",
-      description: "Faturamento em lançamento",
+      description: "Faturamento em Infoprodutos",
       metrics: "CPL: R$3,12 • ROI: 4.2x • Conv: 12%",
       color: "neon-green",
       logo: kirvanoLogo
@@ -19,7 +19,7 @@ export function ProvasReais() {
     {
       company: "Kiwify",
       value: "R$160.000",
-      description: "Vendas em perpétuo",
+      description: "Faturamento em Infoprodutos",
       metrics: "CPL: R$2,87 • ROI: 3.8x • Conv: 15%",
       color: "neon-blue",
       logo: kiwifyLogo
@@ -27,7 +27,7 @@ export function ProvasReais() {
     {
       company: "Lastlink",
       value: "R$60.000",
-      description: "Otimização de funil",
+      description: "Faturamento em Infoprodutos",
       metrics: "CPL: R$1,95 • ROI: 5.1x • Conv: 18%",
       color: "neon-purple",
       logo: lastlinkLogo

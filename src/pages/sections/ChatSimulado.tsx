@@ -14,7 +14,7 @@ export function ChatSimulado() {
     },
     {
       question: "Qual seu diferencial?",
-      answer: "R$300k+ gerenciados em tráfego + capacidade de desenvolver soluções próprias. Quando encontro um gargalo, eu mesmo crio a ferramenta para resolvê-lo."
+      answer: "Resultados reais, adaptação rápida e capacidade de desenvolver soluções próprias. Quando encontro um gargalo, eu mesmo crio a ferramenta para resolvê-lo."
     },
     {
       question: "Como você se mantém atualizado?",
@@ -22,7 +22,7 @@ export function ChatSimulado() {
     },
     {
       question: "Qual o seu maior case?",
-      answer: "R$150k faturados com a Kitvano em um lançamento. Mas o que mais me orgulha é ter criado todo o ecossistema: desde o criativo até as automações de follow-up."
+      answer: "R$300k faturados com a Kirvano em um infoproduto. Mas o que mais me orgulha é ter criado todo o ecossistema: desde o criativo até as automações de follow-up."
     }
   ];
 

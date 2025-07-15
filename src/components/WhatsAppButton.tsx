@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
 import { useState, useEffect } from "react";
+import whatsappIcon from "@/assets/WhatsApp.svg.webp";
 
 export function WhatsAppButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -27,7 +27,11 @@ export function WhatsAppButton() {
         size="lg"
         className="rounded-full w-16 h-16 p-0 glow-primary animate-pulse-glow"
       >
-        <MessageCircle className="w-8 h-8" />
+        <img 
+          src={whatsappIcon} 
+          alt="WhatsApp" 
+          className="w-8 h-8"
+        />
       </Button>
     </div>
   );

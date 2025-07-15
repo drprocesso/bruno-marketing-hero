@@ -16,10 +16,12 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-          <Button variant="whatsapp" size="lg" className="group">
-            <MessageCircle className="mr-2" />
-            Conversar no WhatsApp
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+          <Button variant="whatsapp" size="lg" className="group" asChild>
+            <a href="https://wa.me/5561990442148" target="_blank" rel="noopener noreferrer">
+              <MessageCircle className="mr-2" />
+              Conversar no WhatsApp
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
           
           

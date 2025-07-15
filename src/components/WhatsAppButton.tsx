@@ -26,12 +26,15 @@ export function WhatsAppButton() {
         variant="whatsapp" 
         size="lg"
         className="rounded-full w-16 h-16 p-0 glow-primary animate-pulse-glow"
+        asChild
       >
-        <img 
-          src={whatsappIcon} 
-          alt="WhatsApp" 
-          className="w-8 h-8"
-        />
+        <a href="https://wa.me/5561990442148" target="_blank" rel="noopener noreferrer">
+          <img 
+            src={whatsappIcon} 
+            alt="WhatsApp" 
+            className="w-8 h-8"
+          />
+        </a>
       </Button>
     </div>
   );

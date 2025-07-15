@@ -30,10 +30,12 @@ export function HeroSection() {
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl">Especialista em tráfego, criativos que convertem e VSLs que vendem, Webdesigner e Desenvolvedor de SaaS. Cases reais de faturamento.</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <Button variant="whatsapp" size="lg" className="group">
-              <MessageCircle className="mr-2" />
-              Falar comigo no WhatsApp
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            <Button variant="whatsapp" size="lg" className="group" asChild>
+              <a href="https://wa.me/5561990442148" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="mr-2" />
+                Falar comigo no WhatsApp
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
             
             <Button variant="neonOutline" size="lg" className="group">

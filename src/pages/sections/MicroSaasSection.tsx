@@ -36,7 +36,7 @@ export function MicroSaasSection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 border-primary text-primary">
-            Micro SaaS, Sites & Sistemas
+            Micro SaaS, Sites & Sistemas Completos
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-black mb-6">
             Criando <span className="text-gradient-primary">soluções que resolvem</span> problemas reais

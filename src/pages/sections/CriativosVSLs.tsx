@@ -117,24 +117,7 @@ export function CriativosVSLs() {
           })}
         </div>
 
-        {/* CTA Section */}
-        <Card className="bg-gradient-secondary border-accent/20 glow-accent text-center">
-          <CardContent className="py-12">
-            <TrendingUp className="w-16 h-16 text-accent mx-auto mb-6" />
-            <h3 className="text-3xl font-black mb-4 text-foreground">
-              Quer ver a estratégia completa?
-            </h3>
-            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Cada criativo tem uma estratégia por trás. Posso mostrar como penso os hooks, 
-              angles, copy e otimizações que fazem a diferença na performance.
-            </p>
-            <Button variant="neon" size="lg" className="group">
-              Ver estratégias detalhadas
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </CardContent>
-        </Card>
-      </div>
+       
 
       {/* Modals */}
       <VideoModal

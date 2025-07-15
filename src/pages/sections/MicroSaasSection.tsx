@@ -13,6 +13,14 @@ export function MicroSaasSection() {
       icon: Smartphone,
       color: "neon-purple"
     },
+     {
+      name: "Outros Projetos",
+      description: "Dashboards de sistemas de vendas, gestão de estoque, aluguel...",
+      tech: "React, Supabase, API, Gateway",
+      status: "Desenvolvimento",
+      icon: Zap,
+      color: "neon-green"
+    }
     {
       name: "Dr. Processo",
       description: "Automatização de processos jurídicos com IA e envio via Whatsapp",
@@ -20,15 +28,7 @@ export function MicroSaasSection() {
       status: "Ativo",
       icon: FileText,
       color: "neon-blue"
-    },
-    {
-      name: "HerbApp",
-      description: "App de gestão para cultivadores domésticos com automações inteligentes",
-      tech: "React Native, Supabase",
-      status: "Desenvolvimento",
-      icon: Zap,
-      color: "neon-green"
-    }
+    }   
   ];
 
   return (

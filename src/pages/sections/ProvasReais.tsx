@@ -1,7 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { TrendingUp, Target, DollarSign, BarChart3 } from "lucide-react";
+import { BarChart3 } from "lucide-react";
 import placaComemoracaoImg from "@/assets/placa-comemoracao.jpg";
+import kirvanoLogo from "@/assets/kirvano logo.png";
+import kiwifyLogo from "@/assets/kiwify logo.png";
+import lastlinkLogo from "@/assets/lastlink logo.png";
 
 export function ProvasReais() {
   const cases = [
@@ -11,7 +14,7 @@ export function ProvasReais() {
       description: "Faturamento em lançamento",
       metrics: "CPL: R$3,12 • ROI: 4.2x • Conv: 12%",
       color: "neon-green",
-      icon: TrendingUp
+      logo: kirvanoLogo
     },
     {
       company: "Kiwify",
@@ -19,7 +22,7 @@ export function ProvasReais() {
       description: "Vendas em perpétuo",
       metrics: "CPL: R$2,87 • ROI: 3.8x • Conv: 15%",
       color: "neon-blue",
-      icon: Target
+      logo: kiwifyLogo
     },
     {
       company: "Lastlink",
@@ -27,7 +30,7 @@ export function ProvasReais() {
       description: "Otimização de funil",
       metrics: "CPL: R$1,95 • ROI: 5.1x • Conv: 18%",
       color: "neon-purple",
-      icon: DollarSign
+      logo: lastlinkLogo
     }
   ];
 
@@ -46,13 +49,16 @@ export function ProvasReais() {
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {cases.map((case_, index) => {
-            const Icon = case_.icon;
             return (
               <Card key={index} className="hover-lift border-border/50 bg-card/80 backdrop-blur-sm group">
                 <CardHeader className="pb-4">
                   <div className="flex items-center justify-between mb-4">
-                    <div className={`p-3 rounded-lg bg-${case_.color}/10 border border-${case_.color}/20`}>
-                      <Icon className={`w-6 h-6 text-${case_.color}`} />
+                    <div className="p-3 rounded-lg bg-white/10 border border-white/20 flex items-center justify-center w-16 h-16">
+                      <img 
+                        src={case_.logo} 
+                        alt={`${case_.company} logo`}
+                        className="max-w-full max-h-full object-contain"
+                      />
                     </div>
                     <Badge variant="secondary" className="text-xs">
                       Case Real

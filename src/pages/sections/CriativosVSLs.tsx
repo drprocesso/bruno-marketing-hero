@@ -41,7 +41,7 @@ export function CriativosVSLs() {
       title: "VSL de Saúde - EUA",
       result: "R$160k em vendas nos EUA",
       description: "VSL otimizada para conversar com público americano",
-      metrics: "20min • 15% conv • Perpétuo",
+      metrics: "27min • 100% IA • R$160k vendas",
       icon: Video,
       videoId: "zAFIULKaA7g",
       onButtonClick: () => setVslPerpetuoModalOpen(true)

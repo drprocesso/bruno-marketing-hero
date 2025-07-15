@@ -76,7 +76,14 @@ export function MicroSaasSection() {
                     <strong>Tech Stack:</strong> {produto.tech}
                   </div>
                   <Button variant="ghost" size="sm" className="w-full group">
-                    Ver projeto
+                    <a 
+                      href={produto.name === 'Connectafy' ? 'https://connectafy.com.br/' : produto.name === 'Dr. Processo' ? 'https://drprocesso.com.br/' : '#'} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 w-full justify-center"
+                    >
+                      Ver projeto
+                    </a>
                     <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </CardContent>

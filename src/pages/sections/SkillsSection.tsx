@@ -22,7 +22,7 @@ export function SkillsSection() {
       icon: Palette,
       color: "neon-purple",
       skills: [
-        "VSLs de alta conversão",
+        "Vídeos de alta conversão",
         "Copywriting persuasiva",
         "Hooks e angles virais",
         "CapCut para vídeos",
@@ -40,7 +40,7 @@ export function SkillsSection() {
         "n8n (automações)",
         "Bolt.new (prototipagem)",
         "APIs e integrações",
-        "MVP development"
+        "Webdesigner"
       ]
     }
   ];
@@ -53,7 +53,8 @@ export function SkillsSection() {
     { name: "n8n", category: "Automação" },
     { name: "Canva", category: "Design" },
     { name: "React", category: "Frontend" },
-    { name: "TypeScript", category: "Code" }
+    { name: "TypeScript", category: "Code" },
+    { name: "BotConversa", category: "ChatBot" }
   ];
 
   return (

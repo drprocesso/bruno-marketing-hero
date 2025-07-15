@@ -83,41 +83,41 @@ export function BuscandoEquipe() {
         </div>
 
         {/* Para quem é o trabalho */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
           <div>
             <h3 className="text-3xl font-bold mb-8">Para quem é meu trabalho?</h3>
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="p-2 rounded-lg bg-primary/10 border border-primary/20 mt-1">
+                <div className="p-2 rounded-lg bg-primary/10 border border-primary/20 mt-1 flex-shrink-0">
                   <Target className="w-5 h-5 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-bold mb-2">Produtores, agências e empresas</h4>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-sm lg:text-base">
                     que precisam de soluções práticas, rápidas e escaláveis.
                   </p>
                 </div>
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="p-2 rounded-lg bg-accent/10 border border-accent/20 mt-1">
+                <div className="p-2 rounded-lg bg-accent/10 border border-accent/20 mt-1 flex-shrink-0">
                   <Zap className="w-5 h-5 text-accent" />
                 </div>
                 <div>
                   <h4 className="font-bold mb-2">Negócios que querem evoluir</h4>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-sm lg:text-base">
                     sair do "feito à mão" e partir para automação com performance.
                   </p>
                 </div>
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="p-2 rounded-lg bg-neon-blue/10 border border-neon-blue/20 mt-1">
+                <div className="p-2 rounded-lg bg-neon-blue/10 border border-neon-blue/20 mt-1 flex-shrink-0">
                   <Users className="w-5 h-5 text-neon-blue" />
                 </div>
                 <div>
                   <h4 className="font-bold mb-2">Equipes que buscam completude</h4>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-sm lg:text-base">
                     alguém que entrega tecnologia, design e marketing no mesmo pacote.
                   </p>
                 </div>
@@ -126,43 +126,43 @@ export function BuscandoEquipe() {
           </div>
 
           <Card className="bg-gradient-to-br from-primary/10 via-accent/10 to-neon-blue/10 border-primary/20 glow-primary">
-            <CardContent className="p-8">
+            <CardContent className="p-6 lg:p-8">
               <h3 className="text-2xl font-black mb-6 text-center">
                 Minha abordagem de trabalho:
               </h3>
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span>Entendimento profundo do problema antes de codificar</span>
+                  <span className="text-sm lg:text-base">Entendimento profundo do problema antes de codificar</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span>Desenvolvimento ágil com entregas incrementais</span>
+                  <span className="text-sm lg:text-base">Desenvolvimento ágil com entregas incrementais</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span>Foco em performance e experiência do usuário</span>
+                  <span className="text-sm lg:text-base">Foco em performance e experiência do usuário</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span>Suporte pós-entrega e melhorias contínuas</span>
+                  <span className="text-sm lg:text-base">Suporte pós-entrega e melhorias contínuas</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span>Documentação clara e treinamento da equipe</span>
+                  <span className="text-sm lg:text-base">Documentação clara e treinamento da equipe</span>
                 </div>
               </div>
               
               <div className="text-center">
-                <p className="text-muted-foreground text-sm italic mb-6">
+                <p className="text-muted-foreground text-xs lg:text-sm italic mb-6">
                   "Não desenvolvo apenas código. Desenvolvo soluções que transformam negócios e geram resultados mensuráveis."
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button variant="whatsapp" size="lg" className="group" asChild>
+                <div className="flex flex-col gap-4 justify-center">
+                  <Button variant="whatsapp" size="default" className="group w-full" asChild>
                     <a href="https://wa.me/5561990442148" target="_blank" rel="noopener noreferrer">
                       <MessageCircle className="mr-2" />
-                      Vamos conversar sobre seu projeto
+                      <span className="text-sm">Vamos conversar sobre seu projeto</span>
                       <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                     </a>
                   </Button>

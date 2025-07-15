@@ -34,8 +34,8 @@ export function Timeline() {
     },
     {
       year: "2025",
-      title: "Em busca de equipe estratégica",
-      description: "Pronto para aplicar toda experiência em um time vencedor",
+      title: "Em busca de novos desafios",
+      description: "Pronto para aplicar toda minha experiência no seu negócio",
       icon: Users,
       color: "neon-green"
     }

@@ -2,6 +2,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { X, ExternalLink, Code, ShoppingCart, Calendar, Utensils } from "lucide-react";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface Project {
   id: string;
@@ -22,6 +23,7 @@ interface ProjectModalProps {
 
 export function ProjectModal({ isOpen, onClose, projectId, projects }: ProjectModalProps) {
   const project = projects.find(p => p.id === projectId);
+  const isMobile = useIsMobile();
   
   if (!project) return null;
 
@@ -29,26 +31,31 @@ export function ProjectModal({ isOpen, onClose, projectId, projects }: ProjectMo
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-6xl w-full h-[90vh] p-0 bg-background border-border">
+      <DialogContent className={`${isMobile ? 'max-w-[95vw]' : 'max-w-6xl'} w-full ${isMobile ? 'h-[95vh]' : 'h-[90vh]'} p-0 bg-background border-border`}>
         <DialogHeader className="sr-only">
           <DialogTitle>{project.name}</DialogTitle>
         </DialogHeader>
         
         <div className="flex flex-col h-full">
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-border">
+          <div className={`flex items-center justify-between ${isMobile ? 'p-4' : 'p-6'} border-b border-border`}>
             <div className="flex items-center gap-4">
-              <div className={`p-3 rounded-lg bg-${project.color}/10 border border-${project.color}/20`}>
-                <Icon className={`w-6 h-6 text-${project.color}`} />
+              <div className={`${isMobile ? 'p-2' : 'p-3'} rounded-lg bg-${project.color}/10 border border-${project.color}/20`}>
+                <Icon className={`${isMobile ? 'w-5 h-5' : 'w-6 h-6'} text-${project.color}`} />
               </div>
               <div>
-                <h2 className="text-2xl font-bold">{project.name}</h2>
-                <p className="text-muted-foreground">{project.description}</p>
+                <h2 className={`${isMobile ? 'text-lg' : 'text-2xl'} font-bold`}>{project.name}</h2>
+                <p className={`text-muted-foreground ${isMobile ? 'text-sm' : ''}`}>{project.description}</p>
               </div>
             </div>
             
-            <div className="flex items-center gap-2">
-              <Badge variant="outline" className="text-xs">
+            <div className={`flex items-center gap-2 ${isMobile ? 'flex-col' : ''}`}>
+              {!isMobile && (
+                <Badge variant="outline" className="text-xs">
+                  {project.tech}
+                </Badge>
+              )}
+              <Badge variant="outline" className={`text-xs ${isMobile ? 'hidden' : ''}`}>
                 {project.tech}
               </Badge>
               <Button variant="ghost" size="sm" asChild>
@@ -64,7 +71,7 @@ export function ProjectModal({ isOpen, onClose, projectId, projects }: ProjectMo
           </div>
 
           {/* Preview Frame */}
-          <div className="flex-1 p-6">
+          <div className={`flex-1 ${isMobile ? 'p-2' : 'p-6'}`}>
             <div className="w-full h-full bg-muted/20 rounded-lg border border-border overflow-hidden">
               <iframe
                 src={project.url}
@@ -77,15 +84,15 @@ export function ProjectModal({ isOpen, onClose, projectId, projects }: ProjectMo
           </div>
 
           {/* Footer */}
-          <div className="p-6 border-t border-border bg-muted/20">
-            <div className="flex items-center justify-between">
-              <div className="text-sm text-muted-foreground">
+          <div className={`${isMobile ? 'p-4' : 'p-6'} border-t border-border bg-muted/20`}>
+            <div className={`flex items-center ${isMobile ? 'flex-col gap-4' : 'justify-between'}`}>
+              <div className={`${isMobile ? 'text-xs' : 'text-sm'} text-muted-foreground ${isMobile ? 'text-center' : ''}`}>
                 <strong>Tecnologias:</strong> {project.tech}
               </div>
-              <Button variant="neon" asChild>
+              <Button variant="neon" size={isMobile ? "sm" : "default"} asChild>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
                   <ExternalLink className="w-4 h-4 mr-2" />
-                  Ver projeto completo
+                  {isMobile ? "Ver projeto" : "Ver projeto completo"}
                 </a>
               </Button>
             </div>

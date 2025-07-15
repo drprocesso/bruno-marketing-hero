@@ -14,7 +14,7 @@ export function MicroSaasSection() {
       color: "neon-purple"
     },
      {
-      name: "Outros Projetos",
+      name: "Sob Encomenda",
       description: "Dashboards de sistemas de vendas, gestão de estoque, aluguel...",
       tech: "React, Supabase, API, Gateway",
       status: "Desenvolvimento",

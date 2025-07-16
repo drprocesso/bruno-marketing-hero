@@ -34,8 +34,8 @@ export function Timeline() {
     },
     {
       year: "2025",
-      title: "Em busca de novos desafios",
-      description: "Pronto para aplicar toda minha experiência no seu negócio",
+      title: "Estudei e lapidei habilidades",
+      description: "Aperfeiçoei em automações com IA e sistemas complexos de gerenciamento",
       icon: Users,
       color: "neon-green"
     }

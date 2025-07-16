@@ -20,7 +20,6 @@ export default defineConfig(({ mode }) => ({
       }
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
       output: {
         format: 'es',
         entryFileNames: 'assets/[name]-[hash].js',

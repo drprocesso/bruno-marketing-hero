@@ -68,7 +68,7 @@ export function SkillsSection() {
             Arsenal <span className="text-gradient-primary">completo</span> para performance
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Combinação única de marketing, criatividade e desenvolvimento. 
+            Combinação única de marketing, vendas e desenvolvimento. 
             Domínio técnico em todas as etapas do funil de vendas.
           </p>
         </div>

@@ -11,7 +11,7 @@ export function Footer() {
             <span className="text-gradient-primary">ampliar o seu negócio</span>...
           </h2>
           <p className="text-2xl text-gradient-secondary font-bold">
-            fala comigo.
+            eu posso te ajudar!
           </p>
         </div>
 
@@ -29,7 +29,7 @@ export function Footer() {
 
         <div className="border-t border-border pt-8">
           <p className="text-muted-foreground text-sm mb-4">
-            Bruno.Marketing © 2025 • Especialista em Tráfego & Performance
+            Bruno Zafred © 2025 • Estrategista de Vendas & Desenvolvimento de Sistemas
           </p>
           <p className="text-xs text-muted-foreground">
             Desenvolvido com React, TypeScript e muito café ☕

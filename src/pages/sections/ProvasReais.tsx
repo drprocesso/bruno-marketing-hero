@@ -17,10 +17,10 @@ export function ProvasReais() {
       logo: kirvanoLogo
     },
     {
-      company: "Kiwify",
-      value: "$60.000",
-      description: "Faturamento em Dólares",
-      metrics: "Vendas: 1.2k+ • ROAS: 4.2x",
+      company: "Plataformas de Anúncio",
+      value: "+R$500.000",
+      description: "Investidos em tráfego",
+      metrics: "Nos últimos 12 meses",
       color: "neon-blue",
       logo: kiwifyLogo
     },

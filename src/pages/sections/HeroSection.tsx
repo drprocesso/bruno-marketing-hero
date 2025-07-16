@@ -56,15 +56,15 @@ export function HeroSection() {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-border">
             <div className="text-center">
-              <div className="text-3xl font-black text-neon-green">R$800k+</div>
+              <div className="text-2xl font-black text-neon-green">R$800k+</div>
               <div className="text-sm text-muted-foreground">Faturado em infoprodutos</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-black text-neon-blue">R$500k+</div>
+              <div className="text-2xl font-black text-neon-blue">R$500k+</div>
               <div className="text-sm text-muted-foreground">Investidos em tráfego</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-black text-neon-purple">100+</div>
+              <div className="text-2xl font-black text-neon-purple">100+</div>
               <div className="text-sm text-muted-foreground">Sistemas de vendas criados</div>
             </div>
           </div>

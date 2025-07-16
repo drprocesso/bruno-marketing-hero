@@ -19,7 +19,7 @@ export function Footer() {
           <Button variant="whatsapp" size="lg" className="group" asChild>
             <a href="https://wa.me/5561990442148" target="_blank" rel="noopener noreferrer">
               <MessageCircle />
-              Conversar no WhatsApp
+              Me manda uma mensagem
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </a>
           </Button>

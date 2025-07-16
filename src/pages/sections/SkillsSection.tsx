@@ -143,7 +143,7 @@ export function SkillsSection() {
           <Card className="bg-gradient-to-br from-accent/10 to-transparent border-accent/20">
             <CardContent className="p-8 text-center">
               <Bot className="w-12 h-12 text-accent mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4">Sempre Aprendendo</h3>
+              <h3 className="text-2xl font-bold mb-4">Desenvolvimento Contínuo</h3>
               <p className="text-muted-foreground">
                 Constantemente explorando novas tecnologias, ferramentas e 
                 estratégias para manter a performance sempre em alta.

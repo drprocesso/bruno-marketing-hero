@@ -20,16 +20,19 @@ export default defineConfig(({ mode }) => ({
       }
     },
     rollupOptions: {
+      external: ['react', 'react-dom'],
       output: {
         format: 'es',
         entryFileNames: 'assets/[name]-[hash].js',
         chunkFileNames: 'assets/[name]-[hash].js',
         assetFileNames: 'assets/[name]-[hash].[ext]',
         manualChunks: {
+          'react-vendor': ['react', 'react-dom'],
           'ui-components': [
             '@radix-ui/react-dialog', 
             '@radix-ui/react-toast',
-            '@radix-ui/react-avatar'
+            '@radix-ui/react-avatar',
+            '@radix-ui/react-card'
           ],
           'icons': ['lucide-react'],
           'router': ['react-router-dom'],
@@ -42,7 +45,9 @@ export default defineConfig(({ mode }) => ({
     sourcemap: false
   },
   plugins: [
-    react(),
+    react({
+      jsxImportSource: '@emotion/react'
+    }),
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),

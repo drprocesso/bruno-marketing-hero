@@ -6,6 +6,14 @@
 All colors MUST be HSL.
 */
 
+/* Critical CSS - inline only essential styles */
+.critical-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, hsl(0 0% 8%), hsl(0 0% 4%));
+}
 @layer base {
   :root {
     /* Dark theme base colors */
@@ -124,6 +132,16 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
     background: var(--gradient-background);
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-display: swap;
+  }
+
+  /* Optimize font loading */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Inter'), url('https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2') format('woff2');
   }
 }
 
@@ -164,19 +182,23 @@ All colors MUST be HSL.
   /* Animations */
   .animate-float {
     animation: float 6s ease-in-out infinite;
+    will-change: transform;
   }
 
   .animate-pulse-glow {
     animation: pulse-glow 2s ease-in-out infinite;
+    will-change: box-shadow;
   }
 
   .animate-slide-up {
     animation: slide-up 0.8s ease-out;
+    will-change: transform, opacity;
   }
 
   /* Hover effects */
   .hover-lift {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
   }
   
   .hover-lift:hover {
@@ -199,6 +221,19 @@ All colors MUST be HSL.
     button, a {
       min-height: 44px;
       min-width: 44px;
+    }
+  }
+
+  /* Reduce motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-float,
+    .animate-pulse-glow,
+    .animate-slide-up {
+      animation: none;
+    }
+    
+    .hover-lift {
+      transition: none;
     }
   }
 }

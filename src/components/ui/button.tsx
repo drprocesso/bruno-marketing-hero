@@ -18,9 +18,9 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        neon: "bg-gradient-primary text-primary-foreground font-bold shadow-lg hover:shadow-xl hover:scale-105 glow-primary",
-        neonOutline: "border-2 border-primary bg-transparent text-primary font-bold hover:bg-primary hover:text-primary-foreground hover:glow-primary",
-        whatsapp: "bg-green-600 text-white font-bold hover:bg-green-700 hover:shadow-lg hover:scale-105",
+        neon: "bg-gradient-primary text-primary-foreground font-bold shadow-lg hover:shadow-xl transform-gpu hover:scale-105 glow-primary will-change-transform",
+        neonOutline: "border-2 border-primary bg-transparent text-primary font-bold hover:bg-primary hover:text-primary-foreground hover:glow-primary transform-gpu will-change-transform",
+        whatsapp: "bg-green-600 text-white font-bold hover:bg-green-700 hover:shadow-lg transform-gpu hover:scale-105 will-change-transform",
       },
       size: {
         default: "h-10 px-4 py-2",

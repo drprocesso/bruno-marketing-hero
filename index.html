@@ -9,9 +9,36 @@
     <meta name="keywords" content="Meta Ads, Facebook Ads, VSL, Video Sales Letter, desenvolvimento web, micro SaaS, automação, tráfego pago, marketing digital, Bruno Zafred, criativos, conversão" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://brunozafred.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS inline -->
+    <style>
+      .critical-loading {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(180deg, hsl(0 0% 8%), hsl(0 0% 4%));
+        color: hsl(0 0% 98%);
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+      .spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid hsl(0 0% 20%);
+        border-top: 4px solid hsl(142 85% 60%);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -72,7 +99,12 @@
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Critical loading state -->
+      <div class="critical-loading">
+        <div class="spinner"></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

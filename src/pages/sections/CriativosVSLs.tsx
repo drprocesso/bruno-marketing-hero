@@ -15,9 +15,9 @@ export function CriativosVSLs() {
     {
       type: "VSL",
       title: "VSL de Saúde - Nacional",
-      result: "R$300k em vendas",
+      result: "R$500k em vendas",
       description: "VSL de 25min que converteu incrivelmente bem por meses",
-      metrics: "25min • 100% IA • R$300k vendas",
+      metrics: "25min • 100% IA • R$500k vendas",
       icon: Video,
       videoId: "jJ4q5h4LsSY",
       onButtonClick: () => setVslModalOpen(true)
@@ -39,9 +39,9 @@ export function CriativosVSLs() {
     {
       type: "VSL",
       title: "VSL de Saúde - EUA",
-      result: "$60k em vendas nos EUA",
+      result: "U$60k em vendas nos EUA",
       description: "VSL otimizada para conversar com público americano",
-      metrics: "27min • 100% IA • $60k vendas",
+      metrics: "27min • 100% IA • U$60k vendas",
       icon: Video,
       videoId: "zAFIULKaA7g",
       onButtonClick: () => setVslPerpetuoModalOpen(true)
@@ -126,7 +126,7 @@ export function CriativosVSLs() {
         isOpen={vslModalOpen}
         onClose={() => setVslModalOpen(false)}
         videoId="jJ4q5h4LsSY"
-        title="VSL de Lançamento - Produto Digital"
+        title="VSL de Vendas"
       />
 
       <VideoCarouselModal
@@ -143,7 +143,7 @@ export function CriativosVSLs() {
         isOpen={vslPerpetuoModalOpen}
         onClose={() => setVslPerpetuoModalOpen(false)}
         videoId="zAFIULKaA7g"
-        title="VSL de Vendas Perpétuas"
+        title="VSL de Vendas"
       />
     </section>
   );

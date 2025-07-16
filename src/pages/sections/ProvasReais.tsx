@@ -2,8 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { BarChart3 } from "lucide-react";
 import placaComemoracaoImg from "@/assets/placa-comemoracao.jpg";
-import kirvanoLogo from "@/assets/kirvano logo.png";
-import kiwifyLogo from "@/assets/kiwify logo.png";
+import kirvanoLogo from "@/assets/gateway-logo.png";
+import kiwifyLogo from "@/assets/ads-logo.png";
 import lastlinkLogo from "@/assets/lastlink logo.png";
 
 export function ProvasReais() {

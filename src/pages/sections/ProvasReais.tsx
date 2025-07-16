@@ -9,10 +9,10 @@ import lastlinkLogo from "@/assets/lastlink logo.png";
 export function ProvasReais() {
   const cases = [
     {
-      company: "Kirvano",
-      value: "R$300.000",
+      company: "Infoprodutos",
+      value: "+R$800.000",
       description: "Faturamento em Reais",
-      metrics: "Vendas: 3.1k+ • ROAS: 3.7x",
+      metrics: "Dolar e Real • ROAS: 2.7x",
       color: "neon-green",
       logo: kirvanoLogo
     },

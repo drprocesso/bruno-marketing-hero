@@ -59,7 +59,7 @@ export function CriativosVSLs() {
             Vídeos que <span className="text-gradient-secondary">realmente vendem</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Cada vídeo é testado, otimizado e comprovado. Aqui você vê os que mais performaram e geraram resultados reais.
+            Especialista em copy e edição de vídeos de vendas. Cada vídeo é testado, otimizado e comprovado. Aqui você vê os que mais performaram e geraram resultados reais.
           </p>
         </div>
 

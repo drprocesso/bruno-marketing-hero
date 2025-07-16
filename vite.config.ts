@@ -30,8 +30,7 @@ export default defineConfig(({ mode }) => ({
           'ui-components': [
             '@radix-ui/react-dialog', 
             '@radix-ui/react-toast',
-            '@radix-ui/react-avatar',
-            '@radix-ui/react-card'
+            '@radix-ui/react-avatar'
           ],
           'icons': ['lucide-react'],
           'router': ['react-router-dom'],

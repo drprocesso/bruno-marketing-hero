@@ -4,15 +4,15 @@ import { BarChart3 } from "lucide-react";
 import placaComemoracaoImg from "@/assets/placa-comemoracao.jpg";
 import kirvanoLogo from "@/assets/gateway-logo.png";
 import kiwifyLogo from "@/assets/ads-logo.png";
-import lastlinkLogo from "@/assets/lastlink logo.png";
+import lastlinkLogo from "@/assets/api-logo.png";
 
 export function ProvasReais() {
   const cases = [
     {
       company: "Infoprodutos",
       value: "+R$800.000",
-      description: "Faturamento em Reais",
-      metrics: "Dolar e Real • ROAS: 2.7x",
+      description: "Como afiliado e produtor",
+      metrics: "Vendas em Dolar e Real",
       color: "neon-green",
       logo: kirvanoLogo
     },
@@ -25,10 +25,10 @@ export function ProvasReais() {
       logo: kiwifyLogo
     },
     {
-      company: "Lastlink",
-      value: "R$60.000",
-      description: "Faturamento em Reais",
-      metrics: "Vendas: 1.1k+ • ROAS: 3.6x",
+      company: "Automações",
+      value: "+100 Sistemas",
+      description: "Funis, sites e apps",
+      metrics: "Whatsapp, N8N, APIs",
       color: "neon-purple",
       logo: lastlinkLogo
     }

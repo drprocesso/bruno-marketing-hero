@@ -13,7 +13,7 @@ export function BuscandoEquipe() {
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-black mb-6">
             Pronto para construir o próximo{" "}
-            <span className="text-gradient-primary">case de sucesso</span> com você.
+            <span className="text-gradient-primary">case de sucesso</span> com você
           </h2>
           <div className="max-w-4xl mx-auto space-y-4">
             <p className="text-xl text-muted-foreground">

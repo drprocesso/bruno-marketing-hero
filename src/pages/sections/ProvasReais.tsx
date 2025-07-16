@@ -58,6 +58,9 @@ export function ProvasReais() {
                         src={case_.logo} 
                         alt={`${case_.company} logo`}
                         className="max-w-full max-h-full object-contain"
+                        loading="lazy"
+                        width="96"
+                        height="96"
                       />
                     </div>
                     <Badge variant="secondary" className="text-xs">

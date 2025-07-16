@@ -183,6 +183,24 @@ All colors MUST be HSL.
     transform: translateY(-8px);
     box-shadow: var(--shadow-card), var(--glow-primary);
   }
+
+  /* Performance optimizations */
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  /* Improved contrast for better accessibility */
+  .text-muted-foreground {
+    color: hsl(0 0% 55%);
+  }
+
+  /* Better touch targets for mobile */
+  @media (max-width: 768px) {
+    button, a {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
 }
 
 @keyframes float {

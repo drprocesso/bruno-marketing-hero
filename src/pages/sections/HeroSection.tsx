@@ -28,7 +28,12 @@ export function HeroSection() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Button variant="whatsapp" size="lg" className="group" asChild>
-              <a href="https://wa.me/5561990442148" target="_blank" rel="noopener noreferrer">
+              <a 
+                href="https://wa.me/5561990442148" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Falar comigo no WhatsApp - Bruno Zafred"
+              >
                 <MessageCircle />
                 Falar comigo no WhatsApp
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
@@ -37,7 +42,11 @@ export function HeroSection() {
             
             <Button variant="neonOutline" size="lg" className="group">
               <Eye />
-              <a href="#criativos-vsls" className="flex items-center">
+              <a 
+                href="#criativos-vsls" 
+                className="flex items-center"
+                aria-label="Ver meus cases de criativos e VSLs"
+              >
                 Ver meus cases
               </a>
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
@@ -65,7 +74,14 @@ export function HeroSection() {
         <div className="flex justify-center lg:justify-end">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-30 animate-pulse-glow"></div>
-            <img src={brunoAvatar} alt="Bruno - Estrategista de Marketing" className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-primary/20 animate-float" />
+            <img 
+              src={brunoAvatar} 
+              alt="Bruno Zafred - Estrategista de Marketing Digital e Desenvolvedor de Sistemas, especialista em Meta Ads e VSLs" 
+              className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-primary/20 animate-float"
+              loading="eager"
+              width="384"
+              height="384"
+            />
             
             {/* Floating badges */}
             <div className="absolute -top-4 -right-4 bg-card border border-primary/20 rounded-lg p-3 glow-primary animate-float">

@@ -26,13 +26,22 @@ export function WhatsAppButton() {
         variant="whatsapp" 
         size="lg"
         className="rounded-full w-16 h-16 p-0 glow-primary animate-pulse-glow"
+        aria-label="Contatar Bruno Zafred via WhatsApp"
         asChild
       >
-        <a href="https://wa.me/5561990442148" target="_blank" rel="noopener noreferrer">
+        <a 
+          href="https://wa.me/5561990442148" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label="Abrir conversa no WhatsApp com Bruno Zafred"
+        >
           <img 
             src={whatsappIcon} 
-            alt="WhatsApp" 
+            alt="Ícone do WhatsApp para contato direto" 
             className="w-8 h-8"
+            loading="lazy"
+            width="32"
+            height="32"
           />
         </a>
       </Button>

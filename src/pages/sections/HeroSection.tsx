@@ -16,8 +16,8 @@ export function HeroSection() {
           
           <h1 className="text-5xl lg:text-5xl font-black mb-6 leading-tight">
             Já construí mais de{" "}
-            <span className="text-gradient-primary">100 sistemas</span>{" "}
-            completos de vendas e atendimentos
+            <span className="text-gradient-primary">100 sistemas completos</span>{" "}
+            de vendas e atendimentos
           </h1>
           
           <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gradient-secondary">

@@ -27,7 +27,6 @@ export default defineConfig(({ mode }) => ({
         chunkFileNames: 'assets/[name]-[hash].js',
         assetFileNames: 'assets/[name]-[hash].[ext]',
         manualChunks: {
-          'react-vendor': ['react', 'react-dom'],
           'ui-components': [
             '@radix-ui/react-dialog', 
             '@radix-ui/react-toast',

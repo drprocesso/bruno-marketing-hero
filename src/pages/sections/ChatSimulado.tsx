@@ -22,7 +22,7 @@ export function ChatSimulado() {
     },
     {
       question: "Qual o seu maior case?",
-      answer: "Campanhas que geraram milhares em vendas partindo do zero. Criei desde a estratégia de copy até a gestão completa do tráfego pago com ROI positivo desde o início."
+      answer: "Foram as 2 VSLs e os criativos que criei do zero para venda de um infoproduto para parar de fumar, no nicho de saúde. Fiz meus primeiros múltiplos 6 dígitos com a versão em português e depois traduzi para inglês e anunciei nos EUA onde vendi mais de U$25k em menos de um mês."
     }
   ];
 
@@ -117,11 +117,16 @@ export function ChatSimulado() {
             {/* Progress indicators */}
             <div className="flex justify-center gap-2 pt-4">
               {conversations.map((_, index) => (
-                <div 
+                <button
                   key={index}
-                  className={`w-2 h-2 rounded-full transition-colors ${
-                    index === currentMessageIndex ? 'bg-primary' : 'bg-muted'
+                  onClick={() => {
+                    setCurrentMessageIndex(index);
+                    setShowingAnswer(false);
+                  }}
+                  className={`w-2 h-2 rounded-full transition-all hover:scale-125 cursor-pointer ${
+                    index === currentMessageIndex ? 'bg-primary' : 'bg-muted hover:bg-muted-foreground/50'
                   }`}
+                  aria-label={`Ver pergunta ${index + 1}`}
                 />
               ))}
             </div>

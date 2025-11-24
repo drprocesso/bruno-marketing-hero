@@ -37,7 +37,7 @@ export function ProvasReais() {
       total: "R$ 60.032",
       periodo: "Comissão recebida",
       screenshot: dashboardLastlink,
-      badge: "Afiliado",
+      badge: "Infoproduto",
       color: "neon-purple"
     }
   ];

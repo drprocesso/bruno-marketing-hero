@@ -45,9 +45,9 @@ export function CriativosVSLs() {
   const criativos = [{
     type: "VSL",
     title: "VSL de Saúde - Nacional",
-    result: "R$500k em vendas",
+    result: "R$ +400k em vendas",
     description: "VSL de 25min que converteu incrivelmente bem por meses",
-    metrics: "25min • 100% IA • R$500k vendas",
+    metrics: "25min • 100% IA • R$ +400k vendas",
     icon: Video,
     videoId: "jJ4q5h4LsSY"
   }, {

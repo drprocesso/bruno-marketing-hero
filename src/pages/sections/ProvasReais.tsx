@@ -5,45 +5,38 @@ import dashboardKirvano from "@/assets/dashboard-kirvano.png";
 import dashboardKiwify from "@/assets/dashboard-kiwify.png";
 import dashboardLastlink from "@/assets/dashboard-lastlink.png";
 import dashboardAds from "@/assets/dashboard-ads.png";
-
 export function ProvasReais() {
-  const platforms = [
-    {
-      name: "Kirvano",
-      description: "Plataforma Internacional",
-      faturamento: "R$ 299.537,41",
-      receita: "R$ 272.187,86",
-      vendas: "3.238 vendas",
-      periodo: "Total acumulado",
-      screenshot: dashboardKirvano,
-      badge: "Infoproduto",
-      color: "neon-blue"
-    },
-    {
-      name: "Kiwify",
-      description: "Plataforma Nacional",
-      faturamento: "R$ 161.939,37",
-      vendas: "3.122 vendas",
-      periodo: "Valor líquido recebido",
-      screenshot: dashboardKiwify,
-      badge: "Infoproduto",
-      color: "neon-green"
-    },
-    {
-      name: "Lastlink",
-      description: "Afiliação",
-      faturamento: "R$ 50.189,60",
-      vendas: "564 vendas",
-      total: "R$ 60.032",
-      periodo: "Comissão recebida",
-      screenshot: dashboardLastlink,
-      badge: "Infoproduto",
-      color: "neon-purple"
-    }
-  ];
-
-  return (
-    <section className="py-20 px-4">
+  const platforms = [{
+    name: "Kirvano",
+    description: "Plataforma Internacional",
+    faturamento: "R$ 299.537,41",
+    receita: "R$ 272.187,86",
+    vendas: "3.238 vendas",
+    periodo: "Total acumulado",
+    screenshot: dashboardKirvano,
+    badge: "Infoproduto",
+    color: "neon-blue"
+  }, {
+    name: "Kiwify",
+    description: "Plataforma Nacional",
+    faturamento: "R$ 161.939,37",
+    vendas: "3.122 vendas",
+    periodo: "Valor líquido recebido",
+    screenshot: dashboardKiwify,
+    badge: "Infoproduto",
+    color: "neon-green"
+  }, {
+    name: "Lastlink",
+    description: "Afiliação",
+    faturamento: "R$ 50.189,60",
+    vendas: "564 vendas",
+    total: "R$ 60.032",
+    periodo: "Comissão recebida",
+    screenshot: dashboardLastlink,
+    badge: "Infoproduto",
+    color: "neon-purple"
+  }];
+  return <section className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 border-primary text-primary">
@@ -60,8 +53,7 @@ export function ProvasReais() {
 
         {/* Platforms Grid */}
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
-          {platforms.map((platform, index) => (
-            <Card key={index} className="hover-lift border-border/50 bg-card/80 backdrop-blur-sm overflow-hidden group">
+          {platforms.map((platform, index) => <Card key={index} className="hover-lift border-border/50 bg-card/80 backdrop-blur-sm overflow-hidden group">
               <CardHeader className="pb-4">
                 <div className="flex items-center justify-between mb-4">
                   <CardTitle className="text-2xl font-black">
@@ -86,12 +78,7 @@ export function ProvasReais() {
                     </div>
                   </div>
                   <div className="relative aspect-video overflow-hidden bg-background">
-                    <img 
-                      src={platform.screenshot} 
-                      alt={`Dashboard ${platform.name} mostrando ${platform.vendas} e faturamento de ${platform.faturamento}`}
-                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                    />
+                    <img src={platform.screenshot} alt={`Dashboard ${platform.name} mostrando ${platform.vendas} e faturamento de ${platform.faturamento}`} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                   </div>
                 </div>
 
@@ -107,8 +94,7 @@ export function ProvasReais() {
                     </span>
                   </div>
                   
-                  {platform.receita && (
-                    <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
+                  {platform.receita && <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
                       <div className="flex items-center gap-2">
                         <TrendingUp className={`w-4 h-4 text-${platform.color}`} />
                         <span className="text-sm text-muted-foreground">Receita Líquida</span>
@@ -116,8 +102,7 @@ export function ProvasReais() {
                       <span className={`text-lg font-black text-${platform.color}`}>
                         {platform.receita}
                       </span>
-                    </div>
-                  )}
+                    </div>}
                   
                   <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
                     <div className="flex items-center gap-2">
@@ -134,8 +119,7 @@ export function ProvasReais() {
                   </div>
                 </div>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
 
         {/* Traffic Investment Card */}
@@ -170,12 +154,7 @@ export function ProvasReais() {
                   </div>
                 </div>
                 <div className="relative aspect-video overflow-hidden bg-background">
-                  <img 
-                    src={dashboardAds} 
-                    alt="Dashboard Facebook Ads mostrando R$ 409.633,40 investidos em tráfego pago"
-                    className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
+                  <img src={dashboardAds} alt="Dashboard Facebook Ads mostrando R$ 409.633,40 investidos em tráfego pago" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" loading="lazy" />
                 </div>
               </div>
 
@@ -213,28 +192,8 @@ export function ProvasReais() {
 
         {/* Summary Card */}
         <Card className="mt-16 bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
-          <CardContent className="p-8">
-            <div className="grid md:grid-cols-4 gap-8 text-center">
-              <div>
-                <div className="text-4xl font-black text-gradient-primary mb-2">R$511k+</div>
-                <div className="text-sm text-muted-foreground">Total faturado provado</div>
-              </div>
-              <div>
-                <div className="text-4xl font-black text-gradient-primary mb-2">6.924</div>
-                <div className="text-sm text-muted-foreground">Vendas comprovadas</div>
-              </div>
-              <div>
-                <div className="text-4xl font-black text-gradient-primary mb-2">R$409k+</div>
-                <div className="text-sm text-muted-foreground">Investido em tráfego</div>
-              </div>
-              <div>
-                <div className="text-4xl font-black text-gradient-primary mb-2">100%</div>
-                <div className="text-sm text-muted-foreground">Transparência nos números</div>
-              </div>
-            </div>
-          </CardContent>
+          
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 }

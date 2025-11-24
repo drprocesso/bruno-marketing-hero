@@ -10,9 +10,11 @@ import dashboardKiwify from "@/assets/dashboard-kiwify.png";
 import dashboardLastlink from "@/assets/dashboard-lastlink.png";
 import ads1 from "@/assets/ads1.png";
 import ads2 from "@/assets/ads2.png";
-
 export function ProvasReais() {
-  const [zoomImage, setZoomImage] = useState<{ url: string; alt: string } | null>(null);
+  const [zoomImage, setZoomImage] = useState<{
+    url: string;
+    alt: string;
+  } | null>(null);
   const platforms = [{
     name: "Kirvano",
     description: "Plataforma Internacional",
@@ -84,7 +86,10 @@ export function ProvasReais() {
                       {platform.name.toLowerCase()}.com
                     </div>
                   </div>
-                  <div className="relative aspect-video overflow-hidden bg-background cursor-pointer" onClick={() => setZoomImage({ url: platform.screenshot, alt: `Dashboard ${platform.name} mostrando ${platform.vendas} e faturamento de ${platform.faturamento}` })}>
+                  <div className="relative aspect-video overflow-hidden bg-background cursor-pointer" onClick={() => setZoomImage({
+                url: platform.screenshot,
+                alt: `Dashboard ${platform.name} mostrando ${platform.vendas} e faturamento de ${platform.faturamento}`
+              })}>
                     <img src={platform.screenshot} alt={`Dashboard ${platform.name} mostrando ${platform.vendas} e faturamento de ${platform.faturamento}`} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                   </div>
                 </div>
@@ -101,15 +106,7 @@ export function ProvasReais() {
                     </span>
                   </div>
                   
-                  {platform.receita && <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
-                      <div className="flex items-center gap-2">
-                        <TrendingUp className={`w-4 h-4 text-${platform.color}`} />
-                        <span className="text-sm text-muted-foreground">Receita Líquida</span>
-                      </div>
-                      <span className={`text-lg font-black text-${platform.color}`}>
-                        {platform.receita}
-                      </span>
-                    </div>}
+                  {platform.receita}
                   
                   <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
                     <div className="flex items-center gap-2">
@@ -121,9 +118,7 @@ export function ProvasReais() {
                     </span>
                   </div>
 
-                  <div className="text-xs text-muted-foreground text-center pt-2 border-t border-border">
-                    {platform.periodo}
-                  </div>
+                  
                 </div>
               </CardContent>
             </Card>)}
@@ -149,15 +144,11 @@ export function ProvasReais() {
           <CardContent>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Screenshot Carousel */}
-              <Carousel 
-                opts={{ loop: true }}
-                plugins={[
-                  Autoplay({
-                    delay: 4000,
-                  }),
-                ]}
-                className="w-full"
-              >
+              <Carousel opts={{
+              loop: true
+            }} plugins={[Autoplay({
+              delay: 4000
+            })]} className="w-full">
                 <CarouselContent>
                   <CarouselItem>
                     <div className="bg-card border border-border rounded-lg overflow-hidden shadow-lg">
@@ -171,7 +162,10 @@ export function ProvasReais() {
                           business.facebook.com
                         </div>
                       </div>
-                      <div className="relative aspect-video overflow-hidden bg-background cursor-pointer" onClick={() => setZoomImage({ url: ads1, alt: "Dashboard Facebook Ads mostrando R$ 409.633,40 investidos em tráfego pago" })}>
+                      <div className="relative aspect-video overflow-hidden bg-background cursor-pointer" onClick={() => setZoomImage({
+                      url: ads1,
+                      alt: "Dashboard Facebook Ads mostrando R$ 409.633,40 investidos em tráfego pago"
+                    })}>
                         <img src={ads1} alt="Dashboard Facebook Ads mostrando R$ 409.633,40 investidos em tráfego pago" className="w-full h-full object-cover object-top" loading="lazy" />
                       </div>
                     </div>
@@ -188,7 +182,10 @@ export function ProvasReais() {
                           business.facebook.com
                         </div>
                       </div>
-                      <div className="relative aspect-video overflow-hidden bg-background cursor-pointer" onClick={() => setZoomImage({ url: ads2, alt: "Dashboard Facebook Ads segunda visualização" })}>
+                      <div className="relative aspect-video overflow-hidden bg-background cursor-pointer" onClick={() => setZoomImage({
+                      url: ads2,
+                      alt: "Dashboard Facebook Ads segunda visualização"
+                    })}>
                         <img src={ads2} alt="Dashboard Facebook Ads segunda visualização" className="w-full h-full object-cover object-top" loading="lazy" />
                       </div>
                     </div>
@@ -236,11 +233,6 @@ export function ProvasReais() {
         </Card>
       </div>
 
-      <ImageZoomModal 
-        isOpen={!!zoomImage} 
-        onClose={() => setZoomImage(null)} 
-        imageUrl={zoomImage?.url || ""} 
-        alt={zoomImage?.alt || ""} 
-      />
+      <ImageZoomModal isOpen={!!zoomImage} onClose={() => setZoomImage(null)} imageUrl={zoomImage?.url || ""} alt={zoomImage?.alt || ""} />
     </section>;
 }

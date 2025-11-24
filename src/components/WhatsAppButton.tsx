@@ -30,8 +30,8 @@ export function WhatsAppButton() {
         asChild
       >
         <a 
-          href="https://wa.me/5561999752578" 
-          target="_blank" 
+          href="https://wa.me/5561998500950" 
+          target="_blank"
           rel="noopener noreferrer"
           aria-label="Abrir conversa no WhatsApp com Bruno Zafred"
         >

@@ -104,7 +104,7 @@ export function BuscandoEquipe() {
                 
                 <div className="flex flex-col gap-4 justify-center">
                   <Button variant="whatsapp" size="default" className="group w-full" asChild>
-                    <a href="https://wa.me/5561999752578" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/5561998500950" target="_blank" rel="noopener noreferrer">
                       <MessageCircle />
                       <span className="text-sm">Vamos conversar sobre seu projeto</span>
                       <ArrowRight className="group-hover:translate-x-1 transition-transform" />

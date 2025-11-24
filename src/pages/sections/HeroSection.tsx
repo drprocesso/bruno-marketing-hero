@@ -27,7 +27,7 @@ export function HeroSection() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="whatsapp" size="lg" className="group" asChild>
-              <a href="https://wa.me/5561999752578" target="_blank" rel="noopener noreferrer" aria-label="Falar comigo no WhatsApp - Bruno Zafred">
+              <a href="https://wa.me/5561998500950" target="_blank" rel="noopener noreferrer" aria-label="Falar comigo no WhatsApp - Bruno Zafred">
                 <MessageCircle />
                 Vamos conversar sobre suas VSLs
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />

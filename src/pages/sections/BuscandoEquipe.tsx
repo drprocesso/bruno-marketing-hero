@@ -13,7 +13,14 @@ export function BuscandoEquipe() {
             Pronto para construir o próximo{" "}
             <span className="text-gradient-primary">case de sucesso</span> com você
           </h2>
-          
+          <div className="max-w-4xl mx-auto space-y-4">
+            <p className="text-xl text-muted-foreground">
+              Escrevo textos persuasivos que <strong>vendem</strong>, <strong>escalam</strong> e <strong>automatizam</strong>.
+            </p>
+            <p className="text-lg text-muted-foreground">
+              De SaaS completos a estruturas de funis, chatbots, landing pages, VSLs, áreas de membros e dashboards interativos — tudo com foco em performance e experiência do usuário.
+            </p>
+          </div>
         </div>
 
         {/* Especialidades */}

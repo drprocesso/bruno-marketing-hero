@@ -1,6 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp, ShoppingCart, DollarSign, Target } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import dashboardKirvano from "@/assets/dashboard-kirvano.png";
 import dashboardKiwify from "@/assets/dashboard-kiwify.png";
 import dashboardLastlink from "@/assets/dashboard-lastlink.png";
@@ -141,22 +143,55 @@ export function ProvasReais() {
           </CardHeader>
           <CardContent>
             <div className="grid md:grid-cols-2 gap-8">
-              {/* Screenshot */}
-              <div className="bg-card border border-border rounded-lg overflow-hidden shadow-lg">
-                <div className="bg-muted/50 px-3 py-2 border-b border-border flex items-center gap-2">
-                  <div className="flex gap-1.5">
-                    <div className="w-2.5 h-2.5 rounded-full bg-red-500/60"></div>
-                    <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/60"></div>
-                    <div className="w-2.5 h-2.5 rounded-full bg-green-500/60"></div>
-                  </div>
-                  <div className="flex-1 text-xs text-muted-foreground text-center font-mono">
-                    business.facebook.com
-                  </div>
-                </div>
-                <div className="relative aspect-video overflow-hidden bg-background">
-                  <img src={dashboardAds} alt="Dashboard Facebook Ads mostrando R$ 409.633,40 investidos em tráfego pago" className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500" loading="lazy" />
-                </div>
-              </div>
+              {/* Screenshot Carousel */}
+              <Carousel 
+                opts={{ loop: true }}
+                plugins={[
+                  Autoplay({
+                    delay: 4000,
+                  }),
+                ]}
+                className="w-full"
+              >
+                <CarouselContent>
+                  <CarouselItem>
+                    <div className="bg-card border border-border rounded-lg overflow-hidden shadow-lg">
+                      <div className="bg-muted/50 px-3 py-2 border-b border-border flex items-center gap-2">
+                        <div className="flex gap-1.5">
+                          <div className="w-2.5 h-2.5 rounded-full bg-red-500/60"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/60"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-green-500/60"></div>
+                        </div>
+                        <div className="flex-1 text-xs text-muted-foreground text-center font-mono">
+                          business.facebook.com
+                        </div>
+                      </div>
+                      <div className="relative aspect-video overflow-hidden bg-background">
+                        <img src={dashboardAds} alt="Dashboard Facebook Ads mostrando R$ 409.633,40 investidos em tráfego pago" className="w-full h-full object-cover object-top" loading="lazy" />
+                      </div>
+                    </div>
+                  </CarouselItem>
+                  <CarouselItem>
+                    <div className="bg-card border border-border rounded-lg overflow-hidden shadow-lg">
+                      <div className="bg-muted/50 px-3 py-2 border-b border-border flex items-center gap-2">
+                        <div className="flex gap-1.5">
+                          <div className="w-2.5 h-2.5 rounded-full bg-red-500/60"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/60"></div>
+                          <div className="w-2.5 h-2.5 rounded-full bg-green-500/60"></div>
+                        </div>
+                        <div className="flex-1 text-xs text-muted-foreground text-center font-mono">
+                          business.facebook.com
+                        </div>
+                      </div>
+                      <div className="relative aspect-video overflow-hidden bg-background">
+                        <img src={dashboardAds} alt="Dashboard Facebook Ads segunda visualização" className="w-full h-full object-cover object-top" loading="lazy" />
+                      </div>
+                    </div>
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="left-2" />
+                <CarouselNext className="right-2" />
+              </Carousel>
 
               {/* Metrics */}
               <div className="flex flex-col justify-center space-y-6">

@@ -1,7 +1,47 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { Video, Image } from "lucide-react";
+import { useState } from "react";
+
 export function CriativosVSLs() {
+  const [selectedAd, setSelectedAd] = useState(1);
+  
+  const adsData = {
+    1: {
+      videoId: "Qj5zGXNzPsU",
+      metrics: {
+        ctr: "4,25%",
+        cpc: "R$ 0,57",
+        cpm: "R$ 24,17",
+        cpa: "R$ 64,31",
+        vendas: "484"
+      },
+      isUSD: false
+    },
+    2: {
+      videoId: "NPjkG-jc2ZQ",
+      metrics: {
+        ctr: "6,00%",
+        cpc: "R$ 4,08",
+        cpm: "R$ 204,00",
+        cpa: "R$ 160,32",
+        vendas: "245"
+      },
+      isUSD: true
+    },
+    3: {
+      videoId: "gC6G6grSOxw",
+      metrics: {
+        ctr: "5,46%",
+        cpc: "R$ 3,98",
+        cpm: "R$ 240,02",
+        cpa: "R$ 154,58",
+        vendas: "171"
+      },
+      isUSD: true
+    }
+  };
   const criativos = [{
     type: "VSL",
     title: "VSL de Saúde - Nacional",
@@ -13,11 +53,13 @@ export function CriativosVSLs() {
   }, {
     type: "Criativo",
     title: "Criativos UGC + Hook Viral",
-    result: "CPC 1,00 • CTR 6%",
+    result: `CTR ${adsData[selectedAd].metrics.ctr} • CPC ${adsData[selectedAd].metrics.cpc}`,
     description: "Criativos em vídeo que trouxeram lucro a custo baixo",
-    metrics: "UGC + IA • CPM < 30,00",
+    metrics: `CTR ${adsData[selectedAd].metrics.ctr} • CPC ${adsData[selectedAd].metrics.cpc} • CPM ${adsData[selectedAd].metrics.cpm} • CPA ${adsData[selectedAd].metrics.cpa} • Vendas ${adsData[selectedAd].metrics.vendas}`,
     icon: Image,
-    videoId: "Qj5zGXNzPsU"
+    videoId: adsData[selectedAd].videoId,
+    isUSD: adsData[selectedAd].isUSD,
+    showAdButtons: true
   }, {
     type: "VSL",
     title: "VSL de Saúde - EUA",
@@ -47,9 +89,12 @@ export function CriativosVSLs() {
           return <Card key={index} className="hover-lift border-border/50 bg-card/80 backdrop-blur-sm group">
                 <CardHeader>
                   <div className="flex items-center justify-between mb-4">
-                    <Badge variant={criativo.type === 'VSL' ? 'default' : 'secondary'} className="text-xs">
-                      {criativo.type}
-                    </Badge>
+                    <div className="flex items-center gap-2">
+                      <Badge variant={criativo.type === 'VSL' ? 'default' : 'secondary'} className="text-xs">
+                        {criativo.type}
+                      </Badge>
+                      {criativo.isUSD && <span className="text-xl">🇺🇸</span>}
+                    </div>
                     <div className="p-2 rounded-lg bg-accent/10 border border-accent/20">
                       <Icon className="w-5 h-5 text-accent" />
                     </div>
@@ -59,6 +104,35 @@ export function CriativosVSLs() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
+                  {criativo.showAdButtons && (
+                    <div className="flex gap-2 mb-4">
+                      <Button 
+                        variant={selectedAd === 1 ? "default" : "outline"} 
+                        size="sm" 
+                        onClick={() => setSelectedAd(1)}
+                        className="flex-1"
+                      >
+                        Ads 1
+                      </Button>
+                      <Button 
+                        variant={selectedAd === 2 ? "default" : "outline"} 
+                        size="sm" 
+                        onClick={() => setSelectedAd(2)}
+                        className="flex-1"
+                      >
+                        Ads 2
+                      </Button>
+                      <Button 
+                        variant={selectedAd === 3 ? "default" : "outline"} 
+                        size="sm" 
+                        onClick={() => setSelectedAd(3)}
+                        className="flex-1"
+                      >
+                        Ads 3
+                      </Button>
+                    </div>
+                  )}
+                  
                   <div className="mb-4">
                     <div className="text-primary font-bold text-lg mb-1">
                       {criativo.result}

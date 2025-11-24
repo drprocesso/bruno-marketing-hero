@@ -202,7 +202,7 @@ export function ProvasReais() {
                   </div>
                   <div>
                     <div className="text-4xl font-black text-primary">R$ 409.633,40</div>
-                    <div className="text-sm text-muted-foreground">Investido em Meta Ads</div>
+                    <div className="text-sm text-muted-foreground">Valor gasto em uma conta</div>
                   </div>
                 </div>
 

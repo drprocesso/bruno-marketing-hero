@@ -3,12 +3,16 @@ import { Badge } from "@/components/ui/badge";
 import { TrendingUp, ShoppingCart, DollarSign, Target } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { useState } from "react";
+import { ImageZoomModal } from "@/components/ImageZoomModal";
 import dashboardKirvano from "@/assets/dashboard-kirvano.png";
 import dashboardKiwify from "@/assets/dashboard-kiwify.png";
 import dashboardLastlink from "@/assets/dashboard-lastlink.png";
 import ads1 from "@/assets/ads1.png";
 import ads2 from "@/assets/ads2.png";
+
 export function ProvasReais() {
+  const [zoomImage, setZoomImage] = useState<{ url: string; alt: string } | null>(null);
   const platforms = [{
     name: "Kirvano",
     description: "Plataforma Internacional",
@@ -80,7 +84,7 @@ export function ProvasReais() {
                       {platform.name.toLowerCase()}.com
                     </div>
                   </div>
-                  <div className="relative aspect-video overflow-hidden bg-background">
+                  <div className="relative aspect-video overflow-hidden bg-background cursor-pointer" onClick={() => setZoomImage({ url: platform.screenshot, alt: `Dashboard ${platform.name} mostrando ${platform.vendas} e faturamento de ${platform.faturamento}` })}>
                     <img src={platform.screenshot} alt={`Dashboard ${platform.name} mostrando ${platform.vendas} e faturamento de ${platform.faturamento}`} className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" loading="lazy" />
                   </div>
                 </div>
@@ -167,7 +171,7 @@ export function ProvasReais() {
                           business.facebook.com
                         </div>
                       </div>
-                      <div className="relative aspect-video overflow-hidden bg-background">
+                      <div className="relative aspect-video overflow-hidden bg-background cursor-pointer" onClick={() => setZoomImage({ url: ads1, alt: "Dashboard Facebook Ads mostrando R$ 409.633,40 investidos em tráfego pago" })}>
                         <img src={ads1} alt="Dashboard Facebook Ads mostrando R$ 409.633,40 investidos em tráfego pago" className="w-full h-full object-cover object-top" loading="lazy" />
                       </div>
                     </div>
@@ -184,7 +188,7 @@ export function ProvasReais() {
                           business.facebook.com
                         </div>
                       </div>
-                      <div className="relative aspect-video overflow-hidden bg-background">
+                      <div className="relative aspect-video overflow-hidden bg-background cursor-pointer" onClick={() => setZoomImage({ url: ads2, alt: "Dashboard Facebook Ads segunda visualização" })}>
                         <img src={ads2} alt="Dashboard Facebook Ads segunda visualização" className="w-full h-full object-cover object-top" loading="lazy" />
                       </div>
                     </div>
@@ -231,5 +235,12 @@ export function ProvasReais() {
           
         </Card>
       </div>
+
+      <ImageZoomModal 
+        isOpen={!!zoomImage} 
+        onClose={() => setZoomImage(null)} 
+        imageUrl={zoomImage?.url || ""} 
+        alt={zoomImage?.alt || ""} 
+      />
     </section>;
 }

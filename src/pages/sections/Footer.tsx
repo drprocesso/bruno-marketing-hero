@@ -15,7 +15,7 @@ export function Footer() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
           <Button variant="whatsapp" size="lg" className="group" asChild>
-            <a href="https://wa.me/5561999752578" target="_blank" rel="noopener noreferrer" aria-label="Enviar mensagem para Bruno Zafred no WhatsApp">
+            <a href="https://wa.me/5561998500950" target="_blank" rel="noopener noreferrer" aria-label="Enviar mensagem para Bruno Zafred no WhatsApp">
               <MessageCircle />
               Me manda uma mensagem
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />

@@ -7,7 +7,7 @@ export function BuscandoEquipe() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 border-accent text-accent">
-            Desenvolvimento & Soluções
+            Copy & Gestão de Tráfego
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-black mb-6">
             Pronto para construir o próximo{" "}
@@ -38,7 +38,7 @@ export function BuscandoEquipe() {
                 <div>
                   <h4 className="font-bold mb-2">Produtores, agências e empresas</h4>
                   <p className="text-muted-foreground text-sm lg:text-base">
-                    que precisam de soluções práticas, rápidas e escaláveis.
+                    que precisam de copies persuasivas e campanhas de alta performance.
                   </p>
                 </div>
               </div>
@@ -50,7 +50,7 @@ export function BuscandoEquipe() {
                 <div>
                   <h4 className="font-bold mb-2">Negócios que querem evoluir</h4>
                   <p className="text-muted-foreground text-sm lg:text-base">
-                    sair do "feito à mão" e partir para automação com performance.
+                    sair do tráfego orgânico e escalar com tráfego pago e textos que convertem.
                   </p>
                 </div>
               </div>
@@ -62,7 +62,7 @@ export function BuscandoEquipe() {
                 <div>
                   <h4 className="font-bold mb-2">Equipes que buscam completude</h4>
                   <p className="text-muted-foreground text-sm lg:text-base">
-                    alguém que entrega tecnologia, design e marketing no mesmo pacote.
+                    alguém que entende de copy, criativos e tráfego pago no mesmo pacote.
                   </p>
                 </div>
               </div>
@@ -77,29 +77,29 @@ export function BuscandoEquipe() {
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-sm lg:text-base">Entendimento profundo do problema antes de codificar</span>
+                  <span className="text-sm lg:text-base">Entendimento profundo do público-alvo antes de escrever</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-sm lg:text-base">Desenvolvimento ágil com entregas incrementais</span>
+                  <span className="text-sm lg:text-base">Copy estratégica baseada em gatilhos mentais e persuasão</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-sm lg:text-base">Foco em performance e experiência do usuário</span>
+                  <span className="text-sm lg:text-base">Foco em conversão e resultados mensuráveis (ROI/ROAS)</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-sm lg:text-base">Suporte pós-entrega e melhorias contínuas</span>
+                  <span className="text-sm lg:text-base">Testes A/B contínuos e otimização de campanhas</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span className="text-sm lg:text-base">Documentação clara e treinamento da equipe</span>
+                  <span className="text-sm lg:text-base">Análise de métricas e relatórios de performance</span>
                 </div>
               </div>
               
               <div className="text-center">
                 <p className="text-muted-foreground text-xs lg:text-sm italic mb-6">
-                  "Não desenvolvo apenas código. Desenvolvo soluções que transformam negócios e geram resultados mensuráveis."
+                  "Não escrevo apenas textos. Crio estratégias de copy e tráfego que transformam cliques em vendas e geram resultados mensuráveis."
                 </p>
                 
                 <div className="flex flex-col gap-4 justify-center">

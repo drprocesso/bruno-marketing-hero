@@ -71,7 +71,6 @@ export function ProvasReais() {
                     {platform.badge}
                   </Badge>
                 </div>
-                <p className="text-sm text-muted-foreground">{platform.description}</p>
               </CardHeader>
               <CardContent>
                 {/* Screenshot with browser chrome effect */}

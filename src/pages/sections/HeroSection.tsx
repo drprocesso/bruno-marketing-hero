@@ -1,32 +1,33 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircle, Eye } from "lucide-react";
-import brunoAvatar from "@/assets/bruno.png";
 
 export function HeroSection() {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 pt-20 pb-10">
-      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-        {/* Content */}
-        <div className="text-center lg:text-left animate-slide-up">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center animate-slide-up">
           <div className="mb-6">
             <span className="text-neon-green text-sm font-bold tracking-wider uppercase">
-              Marketing Strategist • Traffic Manager • VSL Creator
+              Copywriter & Criador de VSLs • Gestor de Tráfego
             </span>
           </div>
           
-          <h1 className="text-5xl lg:text-5xl font-black mb-6 leading-tight">
-            Já construí mais de{" "}
-            <span className="text-gradient-primary">100 sistemas completos</span>{" "}
-            de vendas e atendimentos
+          <h1 className="text-5xl lg:text-7xl font-black mb-6 leading-tight">
+            Criei VSLs que geraram{" "}
+            <span className="text-gradient-primary">R$800k+</span>{" "}
+            em vendas
           </h1>
           
           <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gradient-secondary">
-            Agora, quero investir meu talento no seu projeto.
+            Copy persuasiva + tráfego estratégico = resultados reais
           </h2>
           
-          <p className="text-xl text-muted-foreground mb-12 max-w-2xl">Especialista em tráfego, criativos que convertem e VSLs que vendem, Webdesigner e Desenvolvedor de SaaS. Cases reais de faturamento.</p>
+          <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
+            Especialista em criar VSLs de alta conversão, criativos que performam e gestão de tráfego que escala. 
+            Dashboards reais, números reais, resultados comprovados.
+          </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="whatsapp" size="lg" className="group" asChild>
               <a 
                 href="https://wa.me/5561999752578" 
@@ -35,7 +36,7 @@ export function HeroSection() {
                 aria-label="Falar comigo no WhatsApp - Bruno Zafred"
               >
                 <MessageCircle />
-                Falar comigo no WhatsApp
+                Vamos conversar sobre suas VSLs
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
@@ -47,53 +48,25 @@ export function HeroSection() {
                 className="flex items-center"
                 aria-label="Ver meus cases de criativos e VSLs"
               >
-                Ver meus cases
+                Ver provas reais de resultado
               </a>
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
           
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-border">
+          <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-border max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-2xl font-black text-neon-green">R$800k+</div>
-              <div className="text-sm text-muted-foreground">Faturado em infoprodutos</div>
+              <div className="text-3xl font-black text-neon-green">R$800k+</div>
+              <div className="text-sm text-muted-foreground">Vendidos com VSLs</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-black text-neon-blue">R$500k+</div>
+              <div className="text-3xl font-black text-neon-blue">R$409k+</div>
               <div className="text-sm text-muted-foreground">Investidos em tráfego</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-black text-neon-purple">100+</div>
-              <div className="text-sm text-muted-foreground">Sistemas de vendas criados</div>
-            </div>
-          </div>
-        </div>
-        
-        {/* Avatar */}
-        <div className="flex justify-center lg:justify-end">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-30 animate-pulse-glow"></div>
-            <img 
-              src={brunoAvatar} 
-              alt="Bruno Zafred - Estrategista de Marketing Digital e Desenvolvedor de Sistemas, especialista em Meta Ads e VSLs" 
-              className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-primary/20 animate-float"
-              loading="eager"
-              width="384"
-              height="384"
-            />
-            
-            {/* Floating badges */}
-            <div className="absolute -top-4 -right-4 bg-card border border-primary/20 rounded-lg p-3 glow-primary animate-float">
-              <div className="text-sm font-bold text-neon-green">Meta Ads Expert</div>
-              <div className="text-xs text-muted-foreground">5+ anos exp.</div>
-            </div>
-            
-            <div className="absolute -bottom-4 -left-4 bg-card border border-accent/20 rounded-lg p-3 glow-accent animate-float" style={{
-            animationDelay: '1s'
-          }}>
-              <div className="text-sm font-bold text-neon-purple">VSL Creator</div>
-              <div className="text-xs text-muted-foreground">R$800k+ vendidos</div>
+              <div className="text-3xl font-black text-neon-purple">10k+</div>
+              <div className="text-sm text-muted-foreground">Vendas realizadas</div>
             </div>
           </div>
         </div>

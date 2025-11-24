@@ -10,19 +10,19 @@ export function ChatSimulado() {
   const conversations = [
     {
       question: "Por que contratar você?",
-      answer: "Porque combino performance comprovada com visão técnica. Entendo o funil completo de vendas e posso criar as ferramentas que o seu negócio precisa."
+      answer: "Porque entrego copy que vende e campanhas que convertem. Entendo o funil completo de vendas e sei exatamente como transformar visitantes em compradores."
     },
     {
       question: "Qual seu diferencial?",
-      answer: "Resultados reais, adaptação rápida e capacidade de desenvolver soluções próprias. Quando encontro um gargalo, eu mesmo crio a ferramenta para resolvê-lo."
+      answer: "Resultados mensuráveis. Não faço copy bonita, faço copy que gera ROI. Combino gatilhos mentais, análise de dados e testes constantes para maximizar conversões."
     },
     {
       question: "Como você se mantém atualizado?",
-      answer: "Testo constantemente. Cada novo projeto é um desafio. Além disso, desenvolvo meus próprios projetos para entender as tecnologias por dentro."
+      answer: "Testo tudo. Acompanho métricas diariamente, analiso campanhas vencedoras do mercado e aplico os aprendizados imediatamente nos projetos."
     },
     {
       question: "Qual o seu maior case?",
-      answer: "Foram todos os sistemas que criei sozinho do absoluto zero. Desde a visão do negócio até a implementação completa de funis de venda e acompanhamento."
+      answer: "Campanhas que geraram milhares em vendas partindo do zero. Criei desde a estratégia de copy até a gestão completa do tráfego pago com ROI positivo desde o início."
     }
   ];
 

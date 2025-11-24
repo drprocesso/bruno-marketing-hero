@@ -2,10 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MessageCircle, Code, Zap, Bot, Users, Target, ArrowRight, CheckCircle } from "lucide-react";
-
 export function BuscandoEquipe() {
-  return (
-    <section className="py-20 px-4 bg-muted/20">
+  return <section className="py-20 px-4 bg-muted/20">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4 border-accent text-accent">
@@ -26,61 +24,7 @@ export function BuscandoEquipe() {
         </div>
 
         {/* Especialidades */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
-          <Card className="hover-lift border-border/50 bg-card/80 backdrop-blur-sm">
-            <CardContent className="p-8">
-              <div className="p-3 rounded-lg bg-primary/10 border border-primary/20 w-fit mb-6">
-                <Code className="w-8 h-8 text-primary" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">
-                Criação de Micro SaaS e Ferramentas Internas
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Soluções sob demanda para negócios digitais, com Supabase, Bolt.new, n8n e automações personalizadas.
-              </p>
-              <div className="flex items-center gap-2 text-primary">
-                <CheckCircle className="w-5 h-5" />
-                <span className="font-medium">Especialidade Principal</span>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="hover-lift border-border/50 bg-card/80 backdrop-blur-sm">
-            <CardContent className="p-8">
-              <div className="p-3 rounded-lg bg-accent/10 border border-accent/20 w-fit mb-6">
-                <Zap className="w-8 h-8 text-accent" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">
-                Desenvolvimento de Estruturas de Funil Completas
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Sites, áreas de login, páginas de venda, checkout, e-mails e fluxos integrados — do zero ao faturamento.
-              </p>
-              <div className="flex items-center gap-2 text-accent">
-                <CheckCircle className="w-5 h-5" />
-                <span className="font-medium">Funil Completo</span>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="hover-lift border-border/50 bg-card/80 backdrop-blur-sm">
-            <CardContent className="p-8">
-              <div className="p-3 rounded-lg bg-neon-blue/10 border border-neon-blue/20 w-fit mb-6">
-                <Bot className="w-8 h-8 text-neon-blue" />
-              </div>
-              <h3 className="text-xl font-bold mb-4">
-                Automação e Integração com IA e Chatbots
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Bots conversacionais (WhatsApp), fluxos no n8n, APIs externas, OCR e inteligência aplicada.
-              </p>
-              <div className="flex items-center gap-2 text-neon-blue">
-                <CheckCircle className="w-5 h-5" />
-                <span className="font-medium">IA & Automação</span>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+        
 
         {/* Para quem é o trabalho */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
@@ -172,6 +116,5 @@ export function BuscandoEquipe() {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }

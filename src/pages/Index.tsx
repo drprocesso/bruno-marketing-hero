@@ -2,23 +2,35 @@ import { lazy, Suspense } from "react";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 // Lazy load sections for better performance
-const HeroSection = lazy(() => import("./sections/HeroSection").then(module => ({ default: module.HeroSection })));
-const ProvasReais = lazy(() => import("./sections/ProvasReais").then(module => ({ default: module.ProvasReais })));
-const CriativosVSLs = lazy(() => import("./sections/CriativosVSLs").then(module => ({ default: module.CriativosVSLs })));
-const BuscandoEquipe = lazy(() => import("./sections/BuscandoEquipe").then(module => ({ default: module.BuscandoEquipe })));
-const SkillsSection = lazy(() => import("./sections/SkillsSection").then(module => ({ default: module.SkillsSection })));
-const Timeline = lazy(() => import("./sections/Timeline").then(module => ({ default: module.Timeline })));
-const ChatSimulado = lazy(() => import("./sections/ChatSimulado").then(module => ({ default: module.ChatSimulado })));
-const Footer = lazy(() => import("./sections/Footer").then(module => ({ default: module.Footer })));
-
-const SectionLoader = () => (
-  <div className="py-20 flex items-center justify-center">
+const HeroSection = lazy(() => import("./sections/HeroSection").then(module => ({
+  default: module.HeroSection
+})));
+const ProvasReais = lazy(() => import("./sections/ProvasReais").then(module => ({
+  default: module.ProvasReais
+})));
+const CriativosVSLs = lazy(() => import("./sections/CriativosVSLs").then(module => ({
+  default: module.CriativosVSLs
+})));
+const BuscandoEquipe = lazy(() => import("./sections/BuscandoEquipe").then(module => ({
+  default: module.BuscandoEquipe
+})));
+const SkillsSection = lazy(() => import("./sections/SkillsSection").then(module => ({
+  default: module.SkillsSection
+})));
+const Timeline = lazy(() => import("./sections/Timeline").then(module => ({
+  default: module.Timeline
+})));
+const ChatSimulado = lazy(() => import("./sections/ChatSimulado").then(module => ({
+  default: module.ChatSimulado
+})));
+const Footer = lazy(() => import("./sections/Footer").then(module => ({
+  default: module.Footer
+})));
+const SectionLoader = () => <div className="py-20 flex items-center justify-center">
     <div className="animate-pulse bg-muted rounded-lg h-32 w-full max-w-4xl"></div>
-  </div>
-);
+  </div>;
 const Index = () => {
-  return (
-    <div className="min-h-screen overflow-x-hidden">
+  return <div className="min-h-screen overflow-x-hidden">
       <Suspense fallback={<SectionLoader />}>
         <HeroSection />
       </Suspense>
@@ -32,10 +44,10 @@ const Index = () => {
         <BuscandoEquipe />
       </Suspense>
       <Suspense fallback={<SectionLoader />}>
-        <SkillsSection />
+        
       </Suspense>
       <Suspense fallback={<SectionLoader />}>
-        <Timeline />
+        
       </Suspense>
       <Suspense fallback={<SectionLoader />}>
         <ChatSimulado />
@@ -44,8 +56,6 @@ const Index = () => {
         <Footer />
       </Suspense>
       <WhatsAppButton />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;

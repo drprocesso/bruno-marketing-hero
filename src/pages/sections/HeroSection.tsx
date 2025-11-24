@@ -65,7 +65,7 @@ export function HeroSection() {
               <div className="text-sm text-muted-foreground">Investidos em tráfego</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-black text-neon-purple">10k+</div>
+              <div className="text-3xl font-black text-neon-purple">7k+</div>
               <div className="text-sm text-muted-foreground">Vendas realizadas</div>
             </div>
           </div>

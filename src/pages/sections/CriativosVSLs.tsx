@@ -1,14 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Play, Eye, ArrowRight, Video, Image, TrendingUp } from "lucide-react";
-import { useState } from "react";
-import { VideoModal } from "@/components/VideoModal";
-import { VideoCarouselModal } from "@/components/VideoCarouselModal";
+import { Video, Image } from "lucide-react";
 export function CriativosVSLs() {
-  const [vslModalOpen, setVslModalOpen] = useState(false);
-  const [criativoModalOpen, setCriativoModalOpen] = useState(false);
-  const [vslPerpetuoModalOpen, setVslPerpetuoModalOpen] = useState(false);
   const criativos = [{
     type: "VSL",
     title: "VSL de Saúde - Nacional",
@@ -16,8 +9,7 @@ export function CriativosVSLs() {
     description: "VSL de 25min que converteu incrivelmente bem por meses",
     metrics: "25min • 100% IA • R$500k vendas",
     icon: Video,
-    videoId: "jJ4q5h4LsSY",
-    onButtonClick: () => setVslModalOpen(true)
+    videoId: "jJ4q5h4LsSY"
   }, {
     type: "Criativo",
     title: "Criativos UGC + Hook Viral",
@@ -25,17 +17,7 @@ export function CriativosVSLs() {
     description: "Criativos em vídeo que trouxeram lucro a custo baixo",
     metrics: "UGC + IA • CPM < 30,00",
     icon: Image,
-    videos: [{
-      id: "Qj5zGXNzPsU",
-      title: "Criativo UGC 1"
-    }, {
-      id: "NPjkG-jc2ZQ",
-      title: "Criativo UGC 2"
-    }, {
-      id: "gC6G6grSOxw",
-      title: "Criativo UGC 3"
-    }],
-    onButtonClick: () => setCriativoModalOpen(true)
+    videoId: "Qj5zGXNzPsU"
   }, {
     type: "VSL",
     title: "VSL de Saúde - EUA",
@@ -43,8 +25,7 @@ export function CriativosVSLs() {
     description: "VSL otimizada para conversar com público americano",
     metrics: "27min • 100% IA • U$60k vendas",
     icon: Video,
-    videoId: "zAFIULKaA7g",
-    onButtonClick: () => setVslPerpetuoModalOpen(true)
+    videoId: "zAFIULKaA7g"
   }];
   return <section id="criativos-vsls" className="py-20 px-4 bg-muted/20">
       <div className="max-w-6xl mx-auto">
@@ -85,43 +66,26 @@ export function CriativosVSLs() {
                     <p className="text-muted-foreground text-sm mb-4">
                       {criativo.description}
                     </p>
-                    <div className="text-xs text-muted-foreground bg-muted/50 rounded p-2">
+                    <div className="text-xs text-muted-foreground bg-muted/50 rounded p-2 mb-4">
                       {criativo.metrics}
                     </div>
                   </div>
                   
-                  <div className="flex gap-2">
-                    <Button variant="neonOutline" size="sm" className="flex-1 group" onClick={criativo.onButtonClick}>
-                      <Play className="w-4 h-4 mr-1" />
-                      Ver {criativo.type}
-                    </Button>
-                    <Button variant="ghost" size="sm" className="group">
-                      <Eye className="w-4 h-4" />
-                    </Button>
+                  <div className="relative w-full rounded-lg overflow-hidden" style={{ paddingBottom: '56.25%' }}>
+                    <iframe
+                      src={`https://www.youtube.com/embed/${criativo.videoId}?modestbranding=1&rel=0&showinfo=0&controls=1`}
+                      title={criativo.title}
+                      className="absolute top-0 left-0 w-full h-full"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
                   </div>
                 </CardContent>
               </Card>;
         })}
         </div>
 
-        {/* CTA Section */}
-        
       </div>
-
-      {/* Modals */}
-      <VideoModal isOpen={vslModalOpen} onClose={() => setVslModalOpen(false)} videoId="jJ4q5h4LsSY" title="VSL de Vendas" />
-
-      <VideoCarouselModal isOpen={criativoModalOpen} onClose={() => setCriativoModalOpen(false)} videos={[{
-      id: "Qj5zGXNzPsU",
-      title: "Criativo UGC 1"
-    }, {
-      id: "NPjkG-jc2ZQ",
-      title: "Criativo UGC 2"
-    }, {
-      id: "gC6G6grSOxw",
-      title: "Criativo UGC 3"
-    }]} />
-
-      <VideoModal isOpen={vslPerpetuoModalOpen} onClose={() => setVslPerpetuoModalOpen(false)} videoId="zAFIULKaA7g" title="VSL de Vendas" />
     </section>;
 }

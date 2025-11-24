@@ -5,7 +5,6 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 const HeroSection = lazy(() => import("./sections/HeroSection").then(module => ({ default: module.HeroSection })));
 const ProvasReais = lazy(() => import("./sections/ProvasReais").then(module => ({ default: module.ProvasReais })));
 const CriativosVSLs = lazy(() => import("./sections/CriativosVSLs").then(module => ({ default: module.CriativosVSLs })));
-const MicroSaasSection = lazy(() => import("./sections/MicroSaasSection").then(module => ({ default: module.MicroSaasSection })));
 const BuscandoEquipe = lazy(() => import("./sections/BuscandoEquipe").then(module => ({ default: module.BuscandoEquipe })));
 const SkillsSection = lazy(() => import("./sections/SkillsSection").then(module => ({ default: module.SkillsSection })));
 const Timeline = lazy(() => import("./sections/Timeline").then(module => ({ default: module.Timeline })));
@@ -28,9 +27,6 @@ const Index = () => {
       </Suspense>
       <Suspense fallback={<SectionLoader />}>
         <CriativosVSLs />
-      </Suspense>
-      <Suspense fallback={<SectionLoader />}>
-        <MicroSaasSection />
       </Suspense>
       <Suspense fallback={<SectionLoader />}>
         <BuscandoEquipe />

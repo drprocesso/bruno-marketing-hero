@@ -63,9 +63,9 @@ export function CriativosVSLs() {
   }, {
     type: "VSL",
     title: "VSL de Saúde - EUA",
-    result: "U$60k em vendas nos EUA",
+    result: "U$ +25K em vendas nos EUA",
     description: "VSL otimizada para conversar com público americano",
-    metrics: "27min • 100% IA • U$60k vendas",
+    metrics: "27min • 100% IA • U$ +25K vendas",
     icon: Video,
     videoId: "zAFIULKaA7g"
   }];

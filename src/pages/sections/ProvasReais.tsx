@@ -6,7 +6,8 @@ import Autoplay from "embla-carousel-autoplay";
 import dashboardKirvano from "@/assets/dashboard-kirvano.png";
 import dashboardKiwify from "@/assets/dashboard-kiwify.png";
 import dashboardLastlink from "@/assets/dashboard-lastlink.png";
-import dashboardAds from "@/assets/dashboard-ads.png";
+import ads1 from "@/assets/ads1.png";
+import ads2 from "@/assets/ads2.png";
 export function ProvasReais() {
   const platforms = [{
     name: "Kirvano",
@@ -167,7 +168,7 @@ export function ProvasReais() {
                         </div>
                       </div>
                       <div className="relative aspect-video overflow-hidden bg-background">
-                        <img src={dashboardAds} alt="Dashboard Facebook Ads mostrando R$ 409.633,40 investidos em tráfego pago" className="w-full h-full object-cover object-top" loading="lazy" />
+                        <img src={ads1} alt="Dashboard Facebook Ads mostrando R$ 409.633,40 investidos em tráfego pago" className="w-full h-full object-cover object-top" loading="lazy" />
                       </div>
                     </div>
                   </CarouselItem>
@@ -184,7 +185,7 @@ export function ProvasReais() {
                         </div>
                       </div>
                       <div className="relative aspect-video overflow-hidden bg-background">
-                        <img src={dashboardAds} alt="Dashboard Facebook Ads segunda visualização" className="w-full h-full object-cover object-top" loading="lazy" />
+                        <img src={ads2} alt="Dashboard Facebook Ads segunda visualização" className="w-full h-full object-cover object-top" loading="lazy" />
                       </div>
                     </div>
                   </CarouselItem>

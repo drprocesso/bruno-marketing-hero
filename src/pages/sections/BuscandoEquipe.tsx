@@ -15,10 +15,10 @@ export function BuscandoEquipe() {
           </h2>
           <div className="max-w-4xl mx-auto space-y-4">
             <p className="text-xl text-muted-foreground">
-              Escrevo textos persuasivos que <strong>vendem</strong>, <strong>escalam</strong> e <strong>automatizam</strong>.
+              Escrevo textos persuasivos que vendem, escalam e geram lucro
             </p>
             <p className="text-lg text-muted-foreground">
-              De SaaS completos a estruturas de funis, chatbots, landing pages, VSLs, áreas de membros e dashboards interativos — tudo com foco em performance e experiência do usuário.
+              De copy para landing pages e VSL's a criativos - tudo com foco em alta performance e conversão.
             </p>
           </div>
         </div>
